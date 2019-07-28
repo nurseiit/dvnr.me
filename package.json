@@ -2,7 +2,7 @@
   "name": "inspire",
   "version": "1.0.0",
   "description": "Inspire and be inspired.",
-  "main": "pages/index.js",
+  "main": "pages/index.tsx",
   "repository": "git@github.com:nurseiit/inspire.git",
   "author": "Nurseiit Abdimomyn <nurs@unist.ac.kr>",
   "license": "MIT",
@@ -16,5 +16,11 @@
     "next": "^9.0.2",
     "react": "^16.8.6",
     "react-dom": "^16.8.6"
+  },
+  "devDependencies": {
+    "@types/node": "^12.6.8",
+    "@types/react": "^16.8.23",
+    "@types/react-dom": "^16.8.5",
+    "typescript": "^3.5.3"
   }
 }
