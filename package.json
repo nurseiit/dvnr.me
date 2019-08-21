@@ -15,15 +15,14 @@
     "deploy": "yarn run export && cp ./pages/404.html ./out/ && firebase use default && firebase deploy"
   },
   "dependencies": {
-    "firebase": "^6.3.3",
-    "next": "^9.0.2",
-    "react": "^16.8.6",
-    "react-dom": "^16.8.6"
+    "next": "^9.0.4",
+    "react": "^16.9.0",
+    "react-dom": "^16.9.0"
   },
   "devDependencies": {
-    "@types/node": "^12.6.8",
-    "@types/react": "^16.8.23",
-    "@types/react-dom": "^16.8.5",
+    "@types/node": "^12.7.2",
+    "@types/react": "^16.9.2",
+    "@types/react-dom": "^16.9.0",
     "typescript": "^3.5.3"
   }
 }
