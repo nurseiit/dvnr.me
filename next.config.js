@@ -1,12 +1,10 @@
 const images = require('remark-images');
 const emoji = require('remark-emoji');
 
-const withMDX = require('@zeit/next-mdx')({
+const withMDX = require('@next/mdx')({
   options: {
-    mdPlugins: [images, emoji]
+    remarkPlugins: [images, emoji]
   }
 });
 
-module.exports = withMDX({
-  pageExtensions: ['ts', 'tsx', 'mdx']
-});
+module.exports = withMDX();
