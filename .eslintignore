@@ -2,3 +2,4 @@ out
 .next
 node_modules
 next-env.d.ts
+next.config.js
