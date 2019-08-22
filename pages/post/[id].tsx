@@ -4,7 +4,7 @@ import Link from 'next/link';
 import Error from 'next/error';
 import { NextPage } from 'next';
 
-import FirstPost from '../../posts/first-post/index.mdx';
+import FirstPost, { title, author } from '../../posts/first-post/index.mdx';
 
 const allPosts = ['first-post', 'second-post'];
 const postExists = (id: string): boolean => {
@@ -23,7 +23,8 @@ const Post: NextPage = () => {
       <Link href="/post" as="/post">
         <a href="/post">All posts</a>
       </Link>
-      <div>Post Page with id: {id}</div>
+      <h2>Title: {title}</h2>
+      <h3>Author: {author}</h3>
       <FirstPost />
       <Link href="/post/[id]" as={`/post/${otherId}`}>
         <a href={`/post/${otherId}`}>Another Post</a>
