@@ -4,26 +4,32 @@ module.exports = {
     ecmaVersion: 2018,
     sourceType: 'module',
     ecmaFeatures: {
-      jsx: true,
+      jsx: true
     }
-  },
-  plugins: ['@typescript-eslint', 'react', 'jsx-a11y'],
-  env: {
-    browser: true,
-    node: true,
   },
   settings: {
     react: {
-      version: 'detect',
-    },
+      version: 'detect'
+    }
+  },
+  plugins: ['@typescript-eslint', 'react', 'prettier'],
+  env: {
+    browser: true,
+    es6: true
+  },
+  globals: {
+    Atomics: 'readonly',
+    SharedArrayBuffer: 'readonly'
   },
   extends: [
     'airbnb',
     'plugin:@typescript-eslint/recommended',
+    'plugin:react/recommended',
+    'plugin:prettier/recommended',
     'prettier',
-    'prettier/@typescript-eslint'
+    'prettier/react'
   ],
   rules: {
-    "react/jsx-filename-extension": [1, { "extensions": [".ts", ".tsx"] }]
+    'react/jsx-filename-extension': [1, { extensions: ['.ts', '.tsx'] }]
   }
 };
