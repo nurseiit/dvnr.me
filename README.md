@@ -6,7 +6,7 @@ Inspire and be inspired.
 
 > Still under a heavy development.
 
-## Commit description conventions
+### Commit description conventions
 
 1. 🛠 Configurations
 
@@ -21,6 +21,8 @@ Inspire and be inspired.
 5. 🎉 Finishing a feature
 
 6. 🤞 Bug fixes
+
+7. ℹ️ Docs or README
 
 ## License
 
