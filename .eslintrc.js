@@ -10,6 +10,11 @@ module.exports = {
   settings: {
     react: {
       version: 'detect'
+    },
+    'import/resolver': {
+      node: {
+        extensions: ['.ts', '.tsx']
+      }
     }
   },
   plugins: ['@typescript-eslint', 'react', 'prettier'],
