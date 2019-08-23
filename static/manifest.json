@@ -1,0 +1,7 @@
+{
+  "name": "Inspire Beta",
+  "short_name": "Inspire",
+  "icons": [],
+  "start_url": "/",
+  "display": "standalone"
+}

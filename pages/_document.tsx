@@ -1,5 +1,11 @@
 import React from 'react';
-import Document, { DocumentContext, DocumentInitialProps } from 'next/document';
+import Document, {
+  DocumentContext,
+  DocumentInitialProps,
+  Head,
+  Main,
+  NextScript
+} from 'next/document';
 import { ServerStyleSheet } from 'styled-components';
 
 export default class MyDocument extends Document {
@@ -31,5 +37,25 @@ export default class MyDocument extends Document {
     } finally {
       sheet.seal();
     }
+  }
+
+  render(): JSX.Element {
+    return (
+      <html lang="en">
+        <Head>
+          {/* Meta */}
+          <meta
+            name="viewport"
+            content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no,minimal-ui"
+          />
+          <link rel="manifest" href="/static/manifest.json" />
+          <link rel="icon" href="/static/img/favicon.png" />
+        </Head>
+        <body>
+          <Main />
+          <NextScript />
+        </body>
+      </html>
+    );
   }
 }
