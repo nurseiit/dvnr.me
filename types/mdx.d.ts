@@ -1,7 +1,6 @@
 // types/mdx.d.ts
 declare module '*.mdx' {
   const MDXComponent: (props) => JSX.Element;
-  export const title: string;
-  export const author: string;
+  export const details: import('../utils/details');
   export default MDXComponent;
 }
