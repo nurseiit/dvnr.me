@@ -2,6 +2,7 @@ import React from 'react';
 import Document, {
   DocumentContext,
   DocumentInitialProps,
+  Html,
   Head,
   Main,
   NextScript
@@ -41,7 +42,7 @@ export default class MyDocument extends Document {
 
   render(): JSX.Element {
     return (
-      <html lang="en">
+      <Html lang="en">
         <Head>
           {/* Meta */}
           <meta
@@ -55,7 +56,7 @@ export default class MyDocument extends Document {
           <Main />
           <NextScript />
         </body>
-      </html>
+      </Html>
     );
   }
 }

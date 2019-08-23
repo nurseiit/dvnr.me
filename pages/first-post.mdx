@@ -3,8 +3,10 @@
 export const title = 'Hello World!';
 export const author = 'Nurseiit';
 
-import Details from '../../utils/details';
+import Details from '../utils/details';
 export const details = new Details(title, author);
+
+export const getInitialProps = () => ({ details });
 
 <!-- END POST DETAILS -->
 
