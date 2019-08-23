@@ -5,7 +5,7 @@ interface Props {
 }
 
 const PageLayout = ({ children }: Props): JSX.Element => {
-  return <div style={{ background: 'grey' }}>{children}</div>;
+  return <div>{children}</div>;
 };
 
 export default PageLayout;
