@@ -11,12 +11,14 @@ export default class MyApp extends App {
   render(): JSX.Element {
     const { Component, pageProps } = this.props;
     const { isMDXComponent } = Component as MyComponent;
-    if (isMDXComponent)
+    if (isMDXComponent) {
+      const { pathname } = this.props.router;
       return (
-        <PostLayout>
+        <PostLayout pathname={pathname.slice(1)}>
           <Component {...pageProps} />
         </PostLayout>
       );
+    }
     return (
       <PageLayout>
         <Component {...pageProps} />
