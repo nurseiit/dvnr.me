@@ -14,6 +14,8 @@ Inspire and be inspired.
 
 2. 🏗 Implementations and general commits
 
+   - 🎨 Edit styles
+
 3. 📃 Adding or Uploading files
 
 4. 👌 Updates or Upgrades
