@@ -51,6 +51,13 @@ export default class MyDocument extends Document {
           />
           <link rel="manifest" href="/static/manifest.json" />
           <link rel="icon" href="/static/img/favicon.png" />
+          <style>
+            {`
+            * {
+              margin: 0;
+            }
+              `}
+          </style>
         </Head>
         <body>
           <Main />
