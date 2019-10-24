@@ -15,6 +15,5 @@
     "jsx": "preserve"
   },
   "exclude": ["node_modules"],
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx"],
-  "typeRoots": ["./types/mdx.d.ts"]
+  "include": ["**/*.ts", "**/*.tsx"]
 }

@@ -15,24 +15,17 @@
     "lint": "eslint --fix . --ext .ts,.tsx"
   },
   "dependencies": {
-    "@next/mdx": "^9.1.1",
     "antd": "^3.24.2",
     "next": "^9.1.1",
     "react": "^16.11.0",
-    "react-dom": "^16.11.0",
-    "remark-emoji": "^2.0.2",
-    "remark-images": "^1.0.0",
-    "styled-components": "^4.4.0"
+    "react-dom": "^16.11.0"
   },
   "devDependencies": {
-    "@mdx-js/loader": "^1.5.1",
     "@types/node": "^12.11.6",
     "@types/react": "^16.9.9",
     "@types/react-dom": "^16.9.2",
-    "@types/styled-components": "^4.1.19",
     "@typescript-eslint/eslint-plugin": "^2.5.0",
     "@typescript-eslint/parser": "^2.5.0",
-    "babel-plugin-styled-components": "^1.10.6",
     "eslint": "6.5.1",
     "eslint-config-airbnb": "18.0.1",
     "eslint-config-prettier": "^6.4.0",
