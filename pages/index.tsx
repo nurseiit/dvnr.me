@@ -1,5 +1,6 @@
 import React from 'react';
 import { NextPage } from 'next';
+import { Button } from 'antd';
 
 const Index: NextPage = () => (
   <div style={{ position: 'relative', height: '100vh', textAlign: 'center' }}>
@@ -16,7 +17,9 @@ const Index: NextPage = () => (
         src="static/img/loading.gif"
         style={{ height: '200px' }}
       />
-      <h2 style={{ fontWeight: 100 }}>Coming soon...</h2>
+      <Button type="dashed" style={{ fontWeight: 150 }}>
+        Coming soon...
+      </Button>
     </div>
   </div>
 );
