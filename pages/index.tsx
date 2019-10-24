@@ -1,27 +1,17 @@
 import React from 'react';
 import { NextPage } from 'next';
-import { Button } from 'antd';
+import { Box, Flex, Heading, Image } from '@chakra-ui/core';
 
 const Index: NextPage = () => (
-  <div style={{ position: 'relative', height: '100vh', textAlign: 'center' }}>
-    <div
-      style={{
-        position: 'absolute',
-        top: '50%',
-        left: '50%',
-        transform: 'translate(-50%, -50%)'
-      }}
-    >
-      <img
-        alt="loading"
-        src="static/img/loading.gif"
-        style={{ height: '200px' }}
-      />
-      <Button type="dashed" style={{ fontWeight: 150 }}>
-        Coming soon...
-      </Button>
-    </div>
-  </div>
+  <Box mx="auto" maxW="660px">
+    <Heading size="lg" my="30px">
+      devnur
+    </Heading>
+    <Flex align="center" justify="center" d="column">
+      <Image src="/img/loading.gif" maxW="200px" mx="auto" />
+      <Box textAlign="center">Coming soon...</Box>
+    </Flex>
+  </Box>
 );
 
 export default Index;

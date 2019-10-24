@@ -15,12 +15,11 @@
     "lint": "eslint --fix . --ext .ts,.tsx"
   },
   "dependencies": {
-    "@zeit/next-less": "^1.0.1",
-    "antd": "^3.24.2",
-    "babel-plugin-import": "^1.12.2",
-    "less": "^3.10.3",
+    "@chakra-ui/core": "^0.4.1",
+    "@emotion/core": "^10.0.22",
+    "@emotion/styled": "^10.0.22",
+    "emotion-theming": "^10.0.19",
     "next": "^9.1.1",
-    "null-loader": "^3.0.0",
     "react": "^16.11.0",
     "react-dom": "^16.11.0"
   },
