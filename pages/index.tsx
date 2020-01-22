@@ -1,15 +1,6 @@
 import React from 'react';
 import { NextPage } from 'next';
-import { Flex } from '@chakra-ui/core';
 
-import Layout from '../components/layout';
-
-const Index: NextPage = () => (
-  <Layout>
-    <Flex align="center" justify="center">
-      Coming soon...
-    </Flex>
-  </Layout>
-);
+const Index: NextPage = () => <div>Coming soon...</div>;
 
 export default Index;

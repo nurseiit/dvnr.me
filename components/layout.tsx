@@ -14,14 +14,14 @@ const Header = (): JSX.Element => {
     <Flex align="center" justify="space-between" my="15px">
       <Box>
         <Heading style={{ fontWeight: 1000, fontSize: '1.8em' }}>
-          devnur
+          <ChLink href="/">devnur</ChLink>
         </Heading>
         <Heading size="sm" style={{ fontWeight: 300 }}>
           inspirations by{' '}
           <ChLink
             style={{ fontWeight: 400, textDecoration: 'underline' }}
             color="teal.500"
-            href="https://github.com/nurseiit"
+            href="/about"
           >
             Nurseiit A.
           </ChLink>
@@ -53,14 +53,6 @@ const Footer = (): JSX.Element => (
         href="https://www.linkedin.com/in/nurseiit"
       >
         linkedin
-      </ChLink>{' '}
-      &bull;{' '}
-      <ChLink
-        style={{ fontWeight: 400, textDecoration: 'underline' }}
-        color="teal.500"
-        href="https://twitter.com/a.nurseiit"
-      >
-        twitter
       </ChLink>{' '}
       &bull;{' '}
       <ChLink

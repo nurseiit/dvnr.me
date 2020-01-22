@@ -1,7 +1,14 @@
 import React from 'react';
 import App from 'next/app';
 import Head from 'next/head';
-import { ThemeProvider, ColorModeProvider, CSSReset } from '@chakra-ui/core';
+import {
+  ThemeProvider,
+  ColorModeProvider,
+  CSSReset,
+  Flex
+} from '@chakra-ui/core';
+
+import Layout from '../components/layout';
 
 class MyApp extends App {
   render(): JSX.Element {
@@ -13,7 +20,11 @@ class MyApp extends App {
             <title>Beta devnur</title>
           </Head>
           <CSSReset />
-          <Component {...pageProps} />
+          <Layout>
+            <Flex align="center" justify="center">
+              <Component {...pageProps} />
+            </Flex>
+          </Layout>
         </ColorModeProvider>
       </ThemeProvider>
     );
