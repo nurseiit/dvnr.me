@@ -2,7 +2,9 @@ import React from 'react';
 import App from 'next/app';
 import Head from 'next/head';
 import { ThemeProvider, ColorModeProvider, CSSReset } from '@chakra-ui/core';
+import { MDXProvider } from '@mdx-js/react';
 
+import components from '../components/mdx';
 import Layout from '../components/layout';
 
 class MyApp extends App {
@@ -16,7 +18,9 @@ class MyApp extends App {
           </Head>
           <CSSReset />
           <Layout>
-            <Component {...pageProps} />
+            <MDXProvider components={components}>
+              <Component {...pageProps} />
+            </MDXProvider>
           </Layout>
         </ColorModeProvider>
       </ThemeProvider>
