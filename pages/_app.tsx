@@ -3,6 +3,8 @@ import App from 'next/app';
 import Head from 'next/head';
 import { ThemeProvider, ColorModeProvider, CSSReset } from '@chakra-ui/core';
 
+import Layout from '../components/layout';
+
 class MyApp extends App {
   render(): JSX.Element {
     const { Component, pageProps } = this.props;
@@ -13,7 +15,9 @@ class MyApp extends App {
             <title>Beta devnur</title>
           </Head>
           <CSSReset />
-          <Component {...pageProps} />
+          <Layout>
+            <Component {...pageProps} />
+          </Layout>
         </ColorModeProvider>
       </ThemeProvider>
     );
