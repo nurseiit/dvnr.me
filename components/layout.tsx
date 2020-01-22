@@ -5,7 +5,8 @@ import {
   Heading,
   IconButton,
   useColorMode,
-  Link as ChLink
+  Link as ChLink,
+  DarkMode
 } from '@chakra-ui/core';
 
 const Header = (): JSX.Element => {
@@ -27,11 +28,13 @@ const Header = (): JSX.Element => {
           </ChLink>
         </Heading>
       </Box>
-      <IconButton
-        aria-label="Toggle color mode"
-        icon={colorMode === 'light' ? 'moon' : 'sun'}
-        onClick={toggleColorMode}
-      />
+      <DarkMode>
+        <IconButton
+          aria-label="Toggle color mode"
+          icon={colorMode === 'light' ? 'moon' : 'sun'}
+          onClick={toggleColorMode}
+        />
+      </DarkMode>
     </Flex>
   );
 };
