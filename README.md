@@ -8,23 +8,8 @@ Inspire and be inspired.
 
 ### Commit description conventions
 
-1. 🛠 Configurations
-
-   - 📤 Package specific configurations
-
-2. 🏗 Implementations and general commits
-
-   - 🎨 Edit styles
-
-3. 📃 Adding or Uploading files
-
-4. 👌 Updates or Upgrades
-
-5. 🎉 Finishing a feature
-
-6. 🤞 Bug fixes
-
-7. ℹ️ Docs or README
+[gitmoji](https://github.com/carloscuesta/gitmoji) is used as a standard for
+commit messages and emojis.
 
 ## License
 
