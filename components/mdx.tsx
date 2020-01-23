@@ -4,7 +4,10 @@ import styled, { css } from 'styled-components';
 const Wrapper = styled.main`
   margin: 0 auto;
   padding: 0 0 10px 0;
-  font-size: 0.95rem;
+
+  font-size: 0.94rem;
+  font-weight: 300;
+  line-height: 1.8;
 `;
 const a = styled.a`
   text-decoration: underline;
@@ -14,34 +17,43 @@ const img = styled.img`
 `;
 const pre = styled.pre`
   overflow: scroll;
+  border: 1px solid grey;
+  border-radius: 3px;
 `;
 const code = styled.code`
   display: block;
   padding: 10px;
-  font-size: 1.6rem;
-  border: 1px solid grey;
-  border-radius: 3px;
+  font-size: 0.8rem;
 `;
 const h = css`
   font-weight: 500;
   letter-spacing: -0.0125rem;
   margin-top: 20px;
   margin-bottom: 10px;
+  line-height: 1.2;
 `;
 const h1 = styled.h1`
   ${h}
-  font-size: 1.8rem;
+  font-size: 1.7rem;
 `;
 const h2 = styled.h2`
   ${h}
-  font-size: 1.4rem;
+  font-size: 1.5rem;
+`;
+const h3 = styled.h2`
+  ${h}
+  font-size: 1.3rem;
+`;
+const h4 = styled.h2`
+  ${h}
+  font-size: 1.1rem;
 `;
 const p = styled.p`
   margin: 10px 0;
 `;
 const list = css`
   margin: 0;
-  padding: 0;
+  padding: 0 0 0 5px;
   list-style-position: inside;
 `;
 const ul = styled.ul`
@@ -58,6 +70,8 @@ export default {
   code,
   h1,
   h2,
+  h3,
+  h4,
   p,
   ul,
   ol
