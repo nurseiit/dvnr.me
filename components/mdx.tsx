@@ -1,5 +1,6 @@
 /* eslint react/jsx-props-no-spreading: 0 */
 import styled, { css } from 'styled-components';
+import Code from './code';
 
 const Wrapper = styled.main`
   margin: 0 auto;
@@ -14,16 +15,6 @@ const a = styled.a`
 `;
 const img = styled.img`
   max-width: 100%;
-`;
-const pre = styled.pre`
-  overflow: scroll;
-  border: 1px solid grey;
-  border-radius: 3px;
-`;
-const code = styled.code`
-  display: block;
-  padding: 10px;
-  font-size: 0.8rem;
 `;
 const h = css`
   font-weight: 500;
@@ -66,8 +57,7 @@ export default {
   wrapper: Wrapper,
   a,
   img,
-  pre,
-  code,
+  code: Code,
   h1,
   h2,
   h3,
