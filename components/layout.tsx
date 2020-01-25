@@ -8,6 +8,7 @@ import {
   Link as ChLink,
   DarkMode
 } from '@chakra-ui/core';
+import Link from 'next/link';
 
 const Header = (): JSX.Element => {
   const { colorMode, toggleColorMode } = useColorMode();
@@ -15,17 +16,19 @@ const Header = (): JSX.Element => {
     <Flex align="center" justify="space-between" my="15px">
       <Box>
         <Heading style={{ fontWeight: 1000, fontSize: '1.8em' }}>
-          <ChLink href="/">devnur</ChLink>
+          <Link href="/">devnur</Link>
         </Heading>
         <Heading size="sm" style={{ fontWeight: 300 }}>
           inspirations by{' '}
-          <ChLink
-            style={{ fontWeight: 400, textDecoration: 'underline' }}
-            color="teal.500"
-            href="/about"
-          >
-            Nurseiit A.
-          </ChLink>
+          <Link href="/about">
+            <ChLink
+              href="/about"
+              style={{ fontWeight: 400, textDecoration: 'underline' }}
+              color="teal.500"
+            >
+              Nurseiit A.
+            </ChLink>
+          </Link>
         </Heading>
       </Box>
       <DarkMode>
