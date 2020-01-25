@@ -23,7 +23,7 @@ export interface Post {
 /* eslint import/no-dynamic-require: 0 */
 /* eslint global-require: 0 */
 function requirePost(id: string) {
-  return require(`../posts/${id}.mdx`).default;
+  return require(`../pages/posts/${id}.mdx`).default;
 }
 
 function parsePosts(feed: PostMeta[]): Post[] {
