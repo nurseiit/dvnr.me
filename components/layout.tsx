@@ -16,7 +16,9 @@ const Header = (): JSX.Element => {
     <Flex align="center" justify="space-between" my="15px">
       <Box>
         <Heading style={{ fontWeight: 1000, fontSize: '1.8em' }}>
-          <Link href="/">devnur</Link>
+          <Link href="/">
+            <a href="/">devnur</a>
+          </Link>
         </Heading>
         <Heading size="sm" style={{ fontWeight: 300 }}>
           inspirations by{' '}
