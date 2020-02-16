@@ -1,5 +1,13 @@
 export default [
   {
+    id: 'no-more-sbornik',
+    title: 'No More "Sbornik"',
+    description: 'Republican Olympiad in Pavlodar.',
+    tags: ['personal', 'olympiads', 'photos', 'en'],
+    createdAt: '2017-03-28',
+    public: true
+  },
+  {
     id: 'getting-out-of-the-comfort-zone',
     title: 'Getting Out Of The Comfort Zone',
     description: 'My thoughts on performing well at various exams.',
