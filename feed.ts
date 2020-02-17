@@ -1,5 +1,13 @@
 export default [
   {
+    id: 'sleep-less-feel-better',
+    title: 'Sleep Less, Feel Better',
+    description: 'Republican Olympiad in Pavlodar.',
+    tags: ['unist', 'health', 'en'],
+    createdAt: '2018-01-19',
+    public: true
+  },
+  {
     id: 'no-more-sbornik',
     title: 'No More "Sbornik"',
     description: 'Republican Olympiad in Pavlodar.',
