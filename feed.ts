@@ -1,8 +1,16 @@
 export default [
   {
+    id: 'uiso-2019',
+    title: 'UISO 2019',
+    description: '',
+    tags: ['unist', 'personal', 'leadership', 'en'],
+    createdAt: '2018-11-14',
+    public: true
+  },
+  {
     id: 'sleep-less-feel-better',
     title: 'Sleep Less, Feel Better',
-    description: 'Republican Olympiad in Pavlodar.',
+    description: 'A guide to healthy sleep.',
     tags: ['unist', 'health', 'en'],
     createdAt: '2018-01-19',
     public: true
