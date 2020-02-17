@@ -2,7 +2,7 @@ export default [
   {
     id: 'uiso-2019',
     title: 'UISO 2019',
-    description: '',
+    description: 'Essay on leadership.',
     tags: ['unist', 'personal', 'leadership', 'en'],
     createdAt: '2018-11-14',
     public: true
@@ -10,7 +10,7 @@ export default [
   {
     id: 'sleep-less-feel-better',
     title: 'Sleep Less, Feel Better',
-    description: 'A guide to healthy sleep.',
+    description: 'Guide to a healthy sleep.',
     tags: ['unist', 'health', 'en'],
     createdAt: '2018-01-19',
     public: true

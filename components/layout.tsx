@@ -13,14 +13,14 @@ import Link from 'next/link';
 const Header = (): JSX.Element => {
   const { colorMode, toggleColorMode } = useColorMode();
   return (
-    <Flex align="center" justify="space-between" my="15px">
+    <Flex align="center" justify="space-between" my="30px">
       <Box>
-        <Heading style={{ fontWeight: 1000, fontSize: '1.8em' }}>
+        <Heading style={{ fontWeight: 900, fontSize: '1.8em' }}>
           <Link href="/">
             <a href="/">devnur</a>
           </Link>
         </Heading>
-        <Heading size="sm" style={{ fontWeight: 300 }}>
+        <Heading size="sm" style={{ fontWeight: 300, paddingTop: '5px' }}>
           inspirations by{' '}
           <Link href="/about">
             <ChLink
@@ -45,7 +45,7 @@ const Header = (): JSX.Element => {
 };
 
 const Footer = (): JSX.Element => (
-  <Flex align="center" justify="space-between" my="15px">
+  <Flex align="center" justify="space-between" my="30px">
     <Box>
       <ChLink
         style={{ fontWeight: 400, textDecoration: 'underline' }}
