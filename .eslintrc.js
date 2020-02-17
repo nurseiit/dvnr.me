@@ -35,6 +35,7 @@ module.exports = {
     'prettier/react'
   ],
   rules: {
+    'import/extensions': [1, { extensions: ['.ts', '.tsx'] }],
     'react/jsx-filename-extension': [1, { extensions: ['.ts', '.tsx'] }],
     'react/jsx-props-no-spreading': [
       1,
