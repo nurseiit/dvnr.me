@@ -23,7 +23,7 @@ class MyApp extends App {
       <ThemeProvider>
         <ColorModeProvider>
           <Head>
-            <title>Beta devnur</title>
+            <title>devnur &mdash; inspirations by Nurseiit A.</title>
             {/* Import CSS for nprogress */}
             <link rel="stylesheet" type="text/css" href="/nprogress.css" />
           </Head>
