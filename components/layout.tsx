@@ -6,7 +6,7 @@ import {
   IconButton,
   useColorMode,
   Link as ChLink,
-  DarkMode
+  DarkMode,
 } from '@chakra-ui/core';
 import Link from 'next/link';
 

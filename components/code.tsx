@@ -29,7 +29,7 @@ const CodeBlock = ({ children, className }: Props): JSX.Element => {
         style,
         tokens,
         getLineProps,
-        getTokenProps
+        getTokenProps,
       }): JSX.Element => (
         <Pre className={_className} style={{ ...style }}>
           {tokens.map((line, i) => (

@@ -21,16 +21,16 @@ export interface Post {
 }
 
 function parsePosts(feed: PostMeta[]): Post[] {
-  return feed.map(p => ({
+  return feed.map((p) => ({
     ...p,
     createdAt: moment(p.createdAt),
     updatedAt: moment(p.updatedAt || p.createdAt),
-    tags: p.tags || []
+    tags: p.tags || [],
   }));
 }
 
 function filterPublic(feed: PostMeta[]): PostMeta[] {
-  return feed.filter(p => p.public);
+  return feed.filter((p) => p.public);
 }
 
 function sortPosts(feed: Post[]): Post[] {
@@ -50,5 +50,5 @@ export function getPosts(): Post[] {
 }
 
 export function findPost(id: string): Post {
-  return getPosts().find(p => p.id === id);
+  return getPosts().find((p) => p.id === id);
 }

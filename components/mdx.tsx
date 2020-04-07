@@ -64,5 +64,5 @@ export default {
   h4,
   p,
   ul,
-  ol
+  ol,
 };

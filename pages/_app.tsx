@@ -10,7 +10,7 @@ import components from '../components/mdx';
 import Layout from '../components/layout';
 
 // eslint-disable-next-line @typescript-eslint/no-unused-vars
-Router.events.on('routeChangeStart', _ => {
+Router.events.on('routeChangeStart', (_) => {
   NProgress.start();
 });
 Router.events.on('routeChangeComplete', () => NProgress.done());

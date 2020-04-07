@@ -28,7 +28,7 @@ const Index: NextPage = () => {
   const posts = getPosts();
   return (
     <div>
-      {posts.map(post => (
+      {posts.map((post) => (
         <>
           <Title key={post.id}>
             <Link href={`/posts/${post.id}`}>{post.title}</Link>
