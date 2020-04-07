@@ -1,5 +1,5 @@
 import React from 'react';
-import { useColorMode, DarkMode } from '@chakra-ui/core';
+import useDarkMode from 'use-dark-mode';
 import styled from 'styled-components';
 import { Sun, Moon } from '@styled-icons/feather';
 import Link from 'next/link';
@@ -21,11 +21,13 @@ const IconButton = styled.button`
   cursor: pointer;
   padding: 5px;
   border-radius: 0.25rem;
+  background-color: transparent;
   transition: all 250ms;
 `;
 
 const Header = (): JSX.Element => {
-  const { colorMode, toggleColorMode } = useColorMode();
+  const darkMode = useDarkMode();
+  const [colorMode, toggleColorMode] = [darkMode.value, darkMode.toggle];
   return (
     <Flex>
       <div>
@@ -41,17 +43,15 @@ const Header = (): JSX.Element => {
           </Link>
         </p>
       </div>
-      <DarkMode>
-        <IconButton aria-label="Toggle color mode" onClick={toggleColorMode}>
-          <>
-            {colorMode === 'dark' ? (
-              <Sun color="white" size="25px" />
-            ) : (
-              <Moon size="25px" />
-            )}
-          </>
-        </IconButton>
-      </DarkMode>
+      <IconButton aria-label="Toggle color mode" onClick={toggleColorMode}>
+        <>
+          {colorMode ? (
+            <Sun color="white" size="25px" />
+          ) : (
+            <Moon color="black" size="25px" />
+          )}
+        </>
+      </IconButton>
     </Flex>
   );
 };
