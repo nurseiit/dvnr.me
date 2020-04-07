@@ -21,7 +21,7 @@ export interface Theme {
 }
 
 export const theme = {
-  blue: `#2202a9`,
+  blue: `#44AAE5`,
   darkBlue: `#190c65`,
   darkerBlue: `#150956`,
   darkestBlue: `#0f073b`,
@@ -38,13 +38,13 @@ export const theme = {
   darkYellow: `#d0d500`,
   lightYellow: `#fbff6c`,
 
-  orange: `#efbf00`,
+  orange: `#EE7769`,
   darkOrange: `#ff9100`,
   lightOrange: `#ffbe41`,
 
   gray: `#464849`,
   darkGray: `#3d3d3d`,
-  darkerGray: `#1a1d23`,
+  darkerGray: `#000311`,
   darkestGray: `#060606`,
   lightGray: `#bcbcbc`,
   lighterGray: `#e5e5e5`,

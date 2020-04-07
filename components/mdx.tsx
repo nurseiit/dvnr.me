@@ -19,8 +19,8 @@ const img = styled.img`
 const h = css`
   font-weight: 500;
   letter-spacing: -0.0125rem;
-  margin-top: 20px;
-  margin-bottom: 10px;
+  margin-top: 1em;
+  margin-bottom: 1em;
   line-height: 1.2;
 `;
 const h1 = styled.h1`
@@ -41,6 +41,8 @@ const h4 = styled.h2`
 `;
 const p = styled.p`
   margin: 10px 0;
+  font-size: 1.1em;
+  text-align: justify;
 `;
 const list = css`
   margin: 0;

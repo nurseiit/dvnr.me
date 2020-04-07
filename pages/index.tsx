@@ -9,19 +9,19 @@ const Title = styled.h3`
   padding-top: 15px;
   color: #80a1d6;
   font-weight: 900;
+  margin-bottom: 0.5rem;
 `;
 
 const Description = styled.div`
   font-size: 1.1rem;
   font-weight: 300;
-  padding-top: 5px;
-  padding-bottom: 15px;
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
 `;
 
 const CreatedAt = styled.small`
-  font-size: 0.8rem;
-  font-weight: 700;
-  padding-top: 20px;
+  font-size: 0.9rem;
+  font-weight: 500;
 `;
 
 const Index: NextPage = () => {
@@ -34,7 +34,10 @@ const Index: NextPage = () => {
             <Link href={`/posts/${post.id}`}>{post.title}</Link>
           </Title>
           <CreatedAt>{post.createdAt.format('MMMM D, YYYY')}</CreatedAt>
-          <Description>{post.description}</Description>
+          <Description>
+            {'> '}
+            {post.description}
+          </Description>
         </div>
       ))}
     </div>

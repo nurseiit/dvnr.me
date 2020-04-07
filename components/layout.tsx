@@ -15,12 +15,13 @@ const MainLink = styled.a`
   color: #319795;
   text-decoration: underline;
   font-weight: 400;
+  font-size: 1.2rem;
 `;
 
 const IconButton = styled.button`
   cursor: pointer;
   padding: 5px;
-  border-radius: 0.25rem;
+  border: none;
   background-color: transparent;
   transition: all 250ms;
 `;
@@ -31,12 +32,25 @@ const Header = (): JSX.Element => {
   return (
     <Flex>
       <div>
-        <h1 style={{ fontWeight: 900, fontSize: '1.8em' }}>
+        <h1 style={{ fontWeight: 1000, fontSize: '2.5em', marginTop: '0em' }}>
           <Link href="/">
-            <a href="/">devnur</a>
+            <a
+              href="/"
+              style={{ color: `${colorMode ? '#C1DFF0' : '#000311'}` }}
+            >
+              devnur
+            </a>
           </Link>
         </h1>
-        <p style={{ fontWeight: 300, display: 'block' }}>
+        <p
+          style={{
+            fontWeight: 500,
+            display: 'block',
+            fontSize: '1.2em',
+            marginTop: '-1.5em',
+            marginBottom: '1em',
+          }}
+        >
           inspirations by{' '}
           <Link href="/about">
             <MainLink href="/about">Nurseiit A.</MainLink>
