@@ -29,13 +29,13 @@ const Index: NextPage = () => {
   return (
     <div>
       {posts.map((post) => (
-        <>
-          <Title key={post.id}>
+        <div key={post.id}>
+          <Title>
             <Link href={`/posts/${post.id}`}>{post.title}</Link>
           </Title>
           <CreatedAt>{post.createdAt.format('MMMM D, YYYY')}</CreatedAt>
           <Description>{post.description}</Description>
-        </>
+        </div>
       ))}
     </div>
   );
