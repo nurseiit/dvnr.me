@@ -6,6 +6,9 @@ interface Props {
 }
 
 export default createGlobalStyle`
+  html {
+    font-family: 'Gothic A1', sans-serif;
+  }
   body {
     margin: 0;
     hyphens: auto;
