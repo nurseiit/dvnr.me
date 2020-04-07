@@ -19,6 +19,7 @@
     "@emotion/core": "^10.0.28",
     "@emotion/styled": "^10.0.27",
     "@mdx-js/react": "^1.5.8",
+    "@styled-icons/feather": "^10.0.0",
     "emotion-theming": "^10.0.27",
     "moment": "^2.24.0",
     "next": "^9.3.4",
