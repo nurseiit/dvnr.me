@@ -1,85 +1,73 @@
 import React from 'react';
-import {
-  Box,
-  Flex,
-  Heading,
-  IconButton,
-  useColorMode,
-  Link as ChLink,
-  DarkMode,
-} from '@chakra-ui/core';
+import { useColorMode, DarkMode } from '@chakra-ui/core';
+import styled from 'styled-components';
+import { Sun, Moon } from '@styled-icons/feather';
 import Link from 'next/link';
+
+const Flex = styled.div`
+  display: flex;
+  margin: 30px 0;
+  justify-content: space-between;
+  align-items: center;
+`;
+
+const MainLink = styled.a`
+  color: #319795;
+  text-decoration: underline;
+  font-weight: 400;
+`;
+
+const IconButton = styled.button`
+  cursor: pointer;
+  padding: 5px;
+  border-radius: 0.25rem;
+  transition: all 250ms;
+`;
 
 const Header = (): JSX.Element => {
   const { colorMode, toggleColorMode } = useColorMode();
   return (
-    <Flex align="center" justify="space-between" my="30px">
-      <Box>
-        <Heading style={{ fontWeight: 900, fontSize: '1.8em' }}>
+    <Flex>
+      <div>
+        <h1 style={{ fontWeight: 900, fontSize: '1.8em' }}>
           <Link href="/">
             <a href="/">devnur</a>
           </Link>
-        </Heading>
-        <Heading size="sm" style={{ fontWeight: 300, paddingTop: '5px' }}>
+        </h1>
+        <p style={{ fontWeight: 300, display: 'block' }}>
           inspirations by{' '}
           <Link href="/about">
-            <ChLink
-              href="/about"
-              style={{ fontWeight: 400, textDecoration: 'underline' }}
-              color="teal.500"
-            >
-              Nurseiit A.
-            </ChLink>
+            <MainLink href="/about">Nurseiit A.</MainLink>
           </Link>
-        </Heading>
-      </Box>
+        </p>
+      </div>
       <DarkMode>
-        <IconButton
-          aria-label="Toggle color mode"
-          icon={colorMode === 'light' ? 'moon' : 'sun'}
-          onClick={toggleColorMode}
-        />
+        <IconButton aria-label="Toggle color mode" onClick={toggleColorMode}>
+          <>
+            {colorMode === 'dark' ? (
+              <Sun color="white" size="25px" />
+            ) : (
+              <Moon size="25px" />
+            )}
+          </>
+        </IconButton>
       </DarkMode>
     </Flex>
   );
 };
 
 const Footer = (): JSX.Element => (
-  <Flex align="center" justify="space-between" my="30px">
-    <Box>
-      <ChLink
-        style={{ fontWeight: 400, textDecoration: 'underline' }}
-        color="teal.500"
-        href="mailto:nurs@unist.ac.kr"
-      >
-        mail
-      </ChLink>{' '}
-      &bull;{' '}
-      <ChLink
-        style={{ fontWeight: 400, textDecoration: 'underline' }}
-        color="teal.500"
-        href="https://www.linkedin.com/in/nurseiit"
-      >
-        linkedin
-      </ChLink>{' '}
-      &bull;{' '}
-      <ChLink
-        style={{ fontWeight: 400, textDecoration: 'underline' }}
-        color="teal.500"
-        href="https://github.com/nurseiit"
-      >
-        github
-      </ChLink>
-    </Box>
-    <Box>
-      <ChLink
-        style={{ fontWeight: 400, textDecoration: 'underline' }}
-        color="teal.500"
-        href="https://github.com/nurseiit/inspire"
-      >
+  <Flex>
+    <div>
+      <MainLink href="mailto:nurs@unist.ac.kr">mail</MainLink> &bull;{' '}
+      <MainLink href="https://www.linkedin.com/in/nurseiit">linkedin</MainLink>{' '}
+      &bull; <MainLink href="https://github.com/nurseiit">github</MainLink>
+    </div>
+    <div>
+      <MainLink href="https://github.com/nurseiit/inspire">
         edit this page
-      </ChLink>
-    </Box>
+      </MainLink>
+    </div>
   </Flex>
 );
 
@@ -88,13 +76,13 @@ interface Props {
 }
 
 const Layout = ({ children }: Props): JSX.Element => (
-  <Box mx="auto" maxW="660px">
-    <Box mx="20px">
+  <div style={{ margin: 'auto', maxWidth: '660px' }}>
+    <div style={{ margin: 'auto 20px' }}>
       <Header />
       {children}
       <Footer />
-    </Box>
-  </Box>
+    </div>
+  </div>
 );
 
 export default Layout;
