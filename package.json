@@ -1,6 +1,6 @@
 {
   "name": "inspire",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Inspire and be inspired.",
   "main": "pages/index.tsx",
   "repository": "git@github.com:nurseiit/inspire.git",

@@ -42,10 +42,12 @@ const Header = (): JSX.Element => {
             style={{
               fontWeight: 1000,
               fontSize: '2.5em',
-              marginTop: '0em',
+              marginTop: '-0.5em',
             }}
           >
-            <Heading href="/">devnur</Heading>
+            <Heading href="/">
+              <pre>/dev/nur</pre>
+            </Heading>
           </h1>
         </Link>
 
