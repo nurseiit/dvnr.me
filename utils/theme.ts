@@ -3,6 +3,8 @@ export interface Theme {
   textColor: string;
   accentBackground: string;
 
+  heading: string;
+
   links: string;
   hoveredLinks: string;
 
@@ -27,7 +29,7 @@ export const theme = {
   darkestBlue: `#0f073b`,
   lightBlue: `#1f59cd`,
   lighterBlue: `#279AF1`,
-  lightestBlue: `#83aaff`,
+  lightestBlue: `#C1DFF0`,
 
   green: `#3f7912`,
   darkGreen: `#0c511a`,
@@ -51,10 +53,12 @@ export const theme = {
   lightestGray: `#f7f7f7`,
 };
 
-export const lightTheme = {
+const lightThemeBase = {
   background: `white`,
   textColor: `black`,
   accentBackground: theme.lightestGray,
+
+  heading: theme.darkestBlue,
 
   links: theme.blue,
   hoveredLinks: theme.orange,
@@ -73,10 +77,12 @@ export const lightTheme = {
   inlineCodeColor: theme.lighterGray,
 };
 
-export const darkTheme = {
+const darkThemeBase = {
   background: theme.darkerGray,
   textColor: theme.lighterGray,
   accentBackground: theme.darkestGray,
+
+  heading: theme.lightestBlue,
 
   links: theme.lighterBlue,
   hoveredLinks: theme.orange,
@@ -95,5 +101,5 @@ export const darkTheme = {
   inlineCodeColor: theme.darkGray,
 };
 
-export default (darkMode: boolean): Theme =>
-  darkMode ? { ...theme, ...darkTheme } : { ...theme, ...lightTheme };
+export const darkTheme: Theme = { ...theme, ...darkThemeBase };
+export const lightTheme: Theme = { ...theme, ...lightThemeBase };

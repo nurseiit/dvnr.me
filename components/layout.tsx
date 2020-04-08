@@ -24,6 +24,11 @@ const IconButton = styled.button`
   border: none;
   background-color: transparent;
   transition: all 250ms;
+  color: ${({ theme }): string => theme.heading};
+`;
+
+const Heading = styled.a`
+  color: ${({ theme }): string => theme.heading};
 `;
 
 const Header = (): JSX.Element => {
@@ -32,16 +37,18 @@ const Header = (): JSX.Element => {
   return (
     <Flex>
       <div>
-        <h1 style={{ fontWeight: 1000, fontSize: '2.5em', marginTop: '0em' }}>
-          <Link href="/">
-            <a
-              href="/"
-              style={{ color: `${colorMode ? '#C1DFF0' : '#000311'}` }}
-            >
-              devnur
-            </a>
-          </Link>
-        </h1>
+        <Link href="/">
+          <h1
+            style={{
+              fontWeight: 1000,
+              fontSize: '2.5em',
+              marginTop: '0em',
+            }}
+          >
+            <Heading href="/">devnur</Heading>
+          </h1>
+        </Link>
+
         <p
           style={{
             fontWeight: 500,
@@ -58,13 +65,7 @@ const Header = (): JSX.Element => {
         </p>
       </div>
       <IconButton aria-label="Toggle color mode" onClick={toggleColorMode}>
-        <>
-          {colorMode ? (
-            <Sun color="white" size="25px" />
-          ) : (
-            <Moon color="black" size="25px" />
-          )}
-        </>
+        <>{colorMode ? <Sun size="25px" /> : <Moon size="25px" />}</>
       </IconButton>
     </Flex>
   );
