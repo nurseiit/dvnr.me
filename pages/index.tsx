@@ -4,9 +4,9 @@ import Link from 'next/link';
 import styled from 'styled-components';
 import { getPosts } from '../utils/posts';
 
-const Title = styled.h3`
+const Title = styled.h2`
   font-size: 1.5rem;
-  padding-top: 15px;
+  padding-top: 1rem;
   color: #80a1d6;
   font-weight: 900;
   margin-bottom: 0.5rem;
