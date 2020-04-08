@@ -81,7 +81,7 @@ const Footer = (): JSX.Element => (
       &bull; <MainLink href="https://github.com/nurseiit">github</MainLink>
     </div>
     <div>
-      <MainLink href="https://github.com/nurseiit/inspire">
+      <MainLink href="https://github.com/nurseiit/devnur.me">
         edit this page
       </MainLink>
     </div>
