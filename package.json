@@ -12,7 +12,7 @@
     "build": "next build",
     "start": "next start",
     "export": "rm -rf .next out && next build && next export",
-    "lint": "eslint --fix . --ext .ts,.tsx"
+    "lint": "eslint --fix . --ext .ts,.tsx,.js,.jsx"
   },
   "dependencies": {
     "@mdx-js/react": "^1.5.8",
