@@ -42,10 +42,12 @@ const Header = (): JSX.Element => {
             style={{
               fontWeight: 1000,
               fontSize: '2.5em',
-              marginTop: '0em',
+              marginTop: '-0.5em',
             }}
           >
-            <Heading href="/">devnur</Heading>
+            <Heading href="/">
+              <pre>/dev/nur</pre>
+            </Heading>
           </h1>
         </Link>
 
@@ -79,7 +81,7 @@ const Footer = (): JSX.Element => (
       &bull; <MainLink href="https://github.com/nurseiit">github</MainLink>
     </div>
     <div>
-      <MainLink href="https://github.com/nurseiit/inspire">
+      <MainLink href="https://github.com/nurseiit/devnur.me">
         edit this page
       </MainLink>
     </div>

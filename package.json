@@ -1,9 +1,9 @@
 {
-  "name": "inspire",
-  "version": "1.0.1",
-  "description": "Inspire and be inspired.",
+  "name": "devnur.me",
+  "version": "1.0.2",
+  "description": "🚁 /dev/nur – a minimalist blog built with Next.js.",
   "main": "pages/index.tsx",
-  "repository": "git@github.com:nurseiit/inspire.git",
+  "repository": "git@github.com:nurseiit/devnur.me.git",
   "author": "Nurseiit Abdimomyn <nurs@unist.ac.kr>",
   "license": "MIT",
   "private": true,
