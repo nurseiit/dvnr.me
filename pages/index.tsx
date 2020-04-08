@@ -3,6 +3,7 @@ import { NextPage } from 'next';
 import Link from 'next/link';
 import styled from 'styled-components';
 import { getPosts } from '../utils/posts';
+import CreatedAt from '../components/createdAt';
 
 const Title = styled.h2`
   font-size: 1.5rem;
@@ -17,11 +18,6 @@ const Description = styled.div`
   font-weight: 300;
   padding-top: 0.5em;
   padding-bottom: 0.5em;
-`;
-
-const CreatedAt = styled.small`
-  font-size: 0.9rem;
-  font-weight: 500;
 `;
 
 const Index: NextPage = () => {

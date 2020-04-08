@@ -6,15 +6,14 @@ const Wrapper = styled.main`
   margin: 0 auto;
   padding: 0 0 10px 0;
 
-  font-size: 0.94rem;
-  font-weight: 300;
-  line-height: 1.8;
+  line-height: 1.6;
 `;
 const a = styled.a`
   text-decoration: underline;
 `;
 const img = styled.img`
   max-width: 100%;
+  margin-bottom: 1.3em;
 `;
 const h = css`
   font-weight: 500;
@@ -23,9 +22,10 @@ const h = css`
   margin-bottom: 1em;
   line-height: 1.2;
 `;
-const h1 = styled.h1`
+export const h1 = styled.h1`
   ${h}
   font-size: 1.7rem;
+  margin-bottom: 0.5em;
 `;
 const h2 = styled.h2`
   ${h}
@@ -40,8 +40,8 @@ const h4 = styled.h2`
   font-size: 1.1rem;
 `;
 const p = styled.p`
-  margin: 10px 0;
-  font-size: 1.1em;
+  margin: 2em 0;
+  font-size: 1em;
   text-align: justify;
 `;
 const list = css`
