@@ -31,7 +31,9 @@ const Index: NextPage = () => {
       {posts.map((post) => (
         <div key={post.id}>
           <Title>
-            <Link href={`/posts/${post.id}`}>{post.title}</Link>
+            <Link href={`/posts/${post.id}`}>
+              <a href={`/posts/${post.id}`}>{post.title}</a>
+            </Link>
           </Title>
           <CreatedAt>{post.createdAt.format('MMMM D, YYYY')}</CreatedAt>
           <Description>
