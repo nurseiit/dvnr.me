@@ -1,8 +1,10 @@
 import React from 'react';
 import styled from 'styled-components';
+import useDarkMode from 'use-dark-mode';
 
 import Highlight, { defaultProps, Language } from 'prism-react-renderer';
 import nightOwl from 'prism-react-renderer/themes/nightOwl';
+import nightOwlLight from 'prism-react-renderer/themes/nightOwlLight';
 
 interface Props {
   children: string;
@@ -13,14 +15,17 @@ const Pre = styled.pre`
   padding: 10px;
   overflow: scroll;
   font-size: 0.8rem;
+  border-radius: 0.5rem;
+  border: 1px solid ${({ theme }): string => theme.darkBlue};
 `;
 
 const CodeBlock = ({ children, className }: Props): JSX.Element => {
   const language = className ? className.replace(/language-/, '') : '';
+  const { value } = useDarkMode();
   return (
     <Highlight
       {...defaultProps}
-      theme={nightOwl}
+      theme={value ? nightOwl : nightOwlLight}
       code={children.trim()}
       language={language as Language}
     >

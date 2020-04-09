@@ -1,0 +1,58 @@
+import PostInit from '../../components/postInit';
+
+<PostInit id="test-code" />
+
+<!-- Apply katex css -->
+
+<link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/katex@0.11.0/dist/katex.min.css"
+  integrity="sha384-BdGj8xC2eZkQaxoQ8nSLefg4AV4/AwB3Fj+8SUSo7pnKP6Eoy18liIKTPn9oBYNG"
+  crossOrigin="anonymous"
+/>
+
+## Below is code in C++
+
+```cpp
+#include <cstdio>
+#include <vector>
+using namespace std;
+
+typedef long long int ll;
+
+vector<vector<ll>> dp;
+
+ll solve(int n, int k, int pos = 0, int last = 0) {
+   if (pos == n) return 1;
+   ll &res = dp[pos][last];
+   if (res != -1) return res;
+   res = 0;
+   for (int next = (last == 0); next < k; next++)
+     res += solve(n, k, pos + 1, next);
+   return res;
+}
+
+int main() {
+  int n, k;
+  scanf("%d%d", &n, &k);
+
+  dp = vector<vector<ll>>(n + 1, vector<ll> (k + 1, -1));
+
+  printf("%lld\n", solve(n, k));
+  return 0;
+}
+```
+
+## Now, how about inline code?
+
+`$ sudo apt-get install vim`
+
+## Okay, sweet! Do we support LaTeX though?
+
+Lift($L$) can be determined by Lift Coefficient ($C_L$) like the following equation.
+
+$$
+L = \frac{1}{2} \rho v^2 S C_L
+$$
+
+## Looks gorgeous!

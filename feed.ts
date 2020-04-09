@@ -1,5 +1,13 @@
 export default [
   {
+    id: 'test-code',
+    title: 'Testing Code In MDX',
+    description: 'Check if code wrapper components work.',
+    tags: ['test', 'code', 'en'],
+    createdAt: '2020-04-09',
+    public: false,
+  },
+  {
     id: 'uiso-2019',
     title: 'UISO 2019',
     description: 'Essay on leadership.',
