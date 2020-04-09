@@ -41,10 +41,7 @@ export default class MyDocument extends Document {
       <Html lang="en">
         <Head>
           {/* Meta */}
-          <meta
-            name="viewport"
-            content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no,minimal-ui"
-          />
+          <meta name="viewport" content="width=device-width,initial-scale=1" />
           <meta
             name="description"
             content="A minimalist blog built with Next.js and maintained by Nurseiit A. from Kazakhstan."
