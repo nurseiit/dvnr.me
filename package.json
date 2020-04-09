@@ -24,6 +24,8 @@
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "react-grid-gallery": "^0.5.5",
+    "rehype-katex": "^3.0.0",
+    "remark-math": "^2.0.1",
     "styled-components": "^5.1.0",
     "use-dark-mode": "^2.3.1"
   },
