@@ -45,10 +45,21 @@ function processPosts(feed: PostMeta[]): Post[] {
   return sortedPosts;
 }
 
+// only public posts
 export function getPosts(): Post[] {
   return processPosts(allPosts);
 }
 
+function processPostsAll(feed: PostMeta[]): Post[] {
+  const parsedPosts = parsePosts(feed);
+  const sortedPosts = sortPosts(parsedPosts);
+  return sortedPosts;
+}
+
+export function getPostsAll(): Post[] {
+  return processPostsAll(allPosts);
+}
+
 export function findPost(id: string): Post {
-  return getPosts().find((p) => p.id === id);
+  return getPostsAll().find((p) => p.id === id);
 }
