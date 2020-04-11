@@ -67,7 +67,25 @@ const Hbd: NextPage = () => {
           </div>
           <div>
             <BackImg />
-            <div>This is the back of the card.</div>
+            <div
+              style={{
+                fontFamily: 'Verdana',
+                textAlign: 'justify',
+                fontWeight: 200,
+                fontSize: '0.8em',
+                margin: '15px 20px 10px 20px',
+                lineHeight: '1.5',
+              }}
+            >
+              Туған күніңмен Камила! Мне очень повезло так близко подружиться с
+              тобой. Джуниорам повезло что ты с нами вместе поступила &mdash; и
+              вообще, Юнисту повезло что именно ты туда подала{' '}
+              <span aria-label="laughing emoji" role="img">
+                🤣
+              </span>{' '}
+              Екі дүние бақыты мен зор денсаулық тілеймін!
+            </div>
+            <div>Love you and miss you!</div>
           </div>
         </CardBack>
       </ReactCardFlip>
