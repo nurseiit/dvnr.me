@@ -17,7 +17,7 @@ const CardShell = styled.div`
 `;
 
 const BackImg = styled.div`
-  margin: auto;
+  margin: -10px auto auto auto;
   height: 200px;
   width: 150px;
   background-image: url('/img/hbd_photo.jpg');
@@ -33,8 +33,9 @@ const CardFront = styled(CardShell)`
   background-size: cover;
 `;
 
-const CardBack = styled.div`
-  vertical-align: middle;
+const CardBack = styled(CardShell)`
+  background-image: url('/img/hearts_kama_back.jpg');
+  background-size: cover;
 `;
 
 const Centered = styled.div`
@@ -55,7 +56,7 @@ const Hbd: NextPage = () => {
       <ReactCardFlip isFlipped={isFlipped} flipDirection="horizontal">
         <CardFront onClick={handleClick} />
 
-        <CardShell onClick={handleClick}>
+        <CardBack onClick={handleClick}>
           <div style={{ textAlign: 'left', margin: '20px' }}>
             <div style={{ marginBottom: '5px' }}>
               <b>From:</b> Nurs
@@ -64,11 +65,11 @@ const Hbd: NextPage = () => {
               <b>To:</b> Kama
             </div>
           </div>
-          <CardBack>
+          <div>
             <BackImg />
             <div>This is the back of the card.</div>
-          </CardBack>
-        </CardShell>
+          </div>
+        </CardBack>
       </ReactCardFlip>
     </>
   );
