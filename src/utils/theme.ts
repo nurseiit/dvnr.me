@@ -63,7 +63,7 @@ const lightThemeBase = {
   links: theme.blue,
   hoveredLinks: theme.orange,
 
-  shadowColor: theme.lighterGray,
+  shadowColor: `#dbdbdb`,
   borderColor: theme.lighterGray,
 
   headerBg: theme.darkerBlue,
@@ -87,7 +87,7 @@ const darkThemeBase = {
   links: theme.lighterBlue,
   hoveredLinks: theme.orange,
 
-  shadowColor: `black`,
+  shadowColor: `#1f1f1f`,
   borderColor: `black`,
 
   headerBg: theme.darkestBlue,
