@@ -22,6 +22,7 @@
     "nprogress": "^0.2.0",
     "prism-react-renderer": "^1.0.2",
     "react": "^16.13.1",
+    "react-card-flip": "^1.0.10",
     "react-dom": "^16.13.1",
     "react-grid-gallery": "^0.5.5",
     "rehype-katex": "^3.0.0",
