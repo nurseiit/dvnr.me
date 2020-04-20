@@ -18,7 +18,7 @@
     "@mdx-js/react": "^1.5.8",
     "@styled-icons/feather": "^10.0.0",
     "moment": "^2.24.0",
-    "next": "^9.3.4",
+    "next": "^9.3.5",
     "nprogress": "^0.2.0",
     "prism-react-renderer": "^1.0.2",
     "react": "^16.13.1",
