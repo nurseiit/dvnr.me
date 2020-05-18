@@ -1,5 +1,13 @@
 export default [
   {
+    id: 'new-post',
+    title: 'New Post Title',
+    description: 'New Post Description',
+    tags: ['en'],
+    createdAt: '2020-05-19',
+    public: false,
+  },
+  {
     id: 'test-code',
     title: 'Testing Code In MDX',
     description: 'Check if code wrapper components work.',
