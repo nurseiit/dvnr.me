@@ -35,7 +35,7 @@ const Header = (): JSX.Element => {
   const darkMode = useDarkMode();
   const [colorMode, toggleColorMode] = [darkMode.value, darkMode.toggle];
   return (
-    <Flex>
+    <Flex style={{ marginBottom: '-10px', marginTop: '20px' }}>
       <div>
         <Link href="/">
           <h1
