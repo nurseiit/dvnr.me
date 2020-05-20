@@ -12,7 +12,8 @@ const a = styled.a`
   text-decoration: underline;
 `;
 const img = styled.img`
-  max-width: 100%;
+  max-width: 125%;
+  margin-left: -12.5%;
   margin-bottom: 1.3em;
 `;
 const h = css`
@@ -24,7 +25,7 @@ const h = css`
 `;
 export const h1 = styled.h1`
   ${h}
-  font-size: 1.7rem;
+  font-size: 1.8rem;
   margin-bottom: 0.5em;
 `;
 const h2 = styled.h2`
@@ -40,8 +41,8 @@ const h4 = styled.h2`
   font-size: 1.1rem;
 `;
 const p = styled.p`
-  margin: 2em 0;
-  font-size: 1em;
+  margin: 1.35em 0;
+  font-size: 1.1em;
   text-align: justify;
 `;
 const list = css`
