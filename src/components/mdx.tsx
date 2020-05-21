@@ -14,6 +14,10 @@ const a = styled.a`
 const img = styled.img`
   max-width: 125%;
   margin-left: -12.5%;
+  @media (max-width: 825px) {
+    max-width: 100%;
+    margin-left: 0;
+  }
   margin-bottom: 1.3em;
 `;
 const h = css`
