@@ -12,11 +12,13 @@ interface Props {
 }
 
 const Pre = styled.pre`
+  font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
+  line-height: 1.5;
   padding: 10px;
   overflow: scroll;
   font-size: 0.8rem;
   border-radius: 0.5rem;
-  border: 1px solid ${({ theme }): string => theme.darkBlue};
+  border: 1px solid rgba(0, 0, 0, 0.1);
 `;
 
 const Line = styled.div`
