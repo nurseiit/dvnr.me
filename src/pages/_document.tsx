@@ -8,6 +8,8 @@ import Document, {
   DocumentContext,
 } from 'next/document';
 import { ServerStyleSheet } from 'styled-components';
+import { TypographyStyle } from 'react-typography';
+import typography from '../utils/typography';
 
 export default class MyDocument extends Document {
   static async getInitialProps(ctx: DocumentContext) {
@@ -64,10 +66,7 @@ export default class MyDocument extends Document {
             sizes="16x16"
             href="/icons/favicon-16x16.png"
           />
-          <link
-            href="https://fonts.googleapis.com/css2?family=Gothic+A1:wght@300&display=swap"
-            rel="stylesheet"
-          />
+          <TypographyStyle typography={typography} />
         </Head>
         <body>
           <script src="noflash.js" />

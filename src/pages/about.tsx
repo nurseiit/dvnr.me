@@ -6,17 +6,19 @@ import rainbowAnimation from '../components/animations/rainbowAnimation';
 
 const Heading = styled.h2`
   font-size: 1.4em;
+  font-weight: 500;
   display: inline-block;
 `;
 
 const BodyTitle = styled.h3`
   font-size: 1.4em;
-  font-weight: 100;
+  font-weight: 400;
   margin-top: 1.2em;
 `;
 
 const BodyPart = styled.h4`
   font-size: 1.1em;
+  font-weight: 300;
   margin-bottom: -0.6em;
 `;
 
@@ -91,9 +93,10 @@ const AboutPage: NextPage = () => {
         </BodyTitle>
         <hr
           style={{
-            borderTop: '0.1px solid black',
+            borderTop: '0.1px solid grey',
             maxWidth: '300px',
-            opacity: 0.2,
+            opacity: 0.3,
+            margin: 'auto',
           }}
         />
 

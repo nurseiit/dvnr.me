@@ -3,7 +3,7 @@ import { NextPage } from 'next';
 import Link from 'next/link';
 import styled from 'styled-components';
 import { getPosts } from '../utils/posts';
-import CreatedAt from '../components/createdAt';
+import { rhythm } from '../utils/typography';
 
 const Title = styled.h2`
   font-size: 1.5rem;
@@ -31,7 +31,9 @@ const Index: NextPage = () => {
               <a href={`/posts/${post.id}`}>{post.title}</a>
             </Link>
           </Title>
-          <CreatedAt>{post.createdAt.format('MMMM D, YYYY')}</CreatedAt>
+          <span style={{ fontSize: rhythm(1 / 2) }}>
+            {post.createdAt.format('MMMM D, YYYY')}
+          </span>
           <Description>
             {'> '}
             {post.description}

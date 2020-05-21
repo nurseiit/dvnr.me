@@ -6,12 +6,7 @@ interface Props {
 }
 
 export default createGlobalStyle`
-  html {
-    font-family: 'Gothic A1', sans-serif;
-  }
   body {
-    margin: 0;
-    hyphens: auto;
     background: ${(props: Props): string => props.theme.background};
     color: ${(props: Props): string => props.theme.textColor};
     a {
@@ -20,6 +15,10 @@ export default createGlobalStyle`
       :hover {
         color: ${(props: Props): string => props.theme.hoveredLinks};
       }
+    }
+    code {
+      background: ${(props: Props): string => props.theme.inlineCodeBg};
+      color: ${(props: Props): string => props.theme.inlineCodeColor};
     }
   }
 `;

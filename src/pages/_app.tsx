@@ -4,6 +4,8 @@ import App from 'next/app';
 import Head from 'next/head';
 import Router from 'next/router';
 import GlobalStyle from '../utils/globalStyle';
+import 'typeface-merriweather';
+import 'typeface-open-sans';
 
 import Layout from '../components/layout';
 import Providers from '../components/providers';

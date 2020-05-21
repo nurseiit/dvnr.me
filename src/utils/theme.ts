@@ -20,6 +20,7 @@ export interface Theme {
   grayHoveredButtonBg: string;
 
   inlineCodeColor: string;
+  inlineCodeBg: string;
 }
 
 export const theme = {
@@ -74,7 +75,8 @@ const lightThemeBase = {
   grayButtonBg: theme.lightestGray,
   grayHoveredButtonBg: theme.orange,
 
-  inlineCodeColor: theme.lighterGray,
+  inlineCodeColor: '#1a1a1a',
+  inlineCodeBg: 'rgba(255, 229, 100, 0.2)',
 };
 
 const darkThemeBase = {
@@ -98,7 +100,8 @@ const darkThemeBase = {
   grayButtonBg: theme.darkGray,
   grayHoveredButtonBg: theme.orange,
 
-  inlineCodeColor: theme.darkGray,
+  inlineCodeColor: '#e6e6e6',
+  inlineCodeBg: 'rgba(115, 124, 153, 0.2)',
 };
 
 export const darkTheme: Theme = { ...theme, ...darkThemeBase };
