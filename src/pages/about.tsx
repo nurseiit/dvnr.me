@@ -5,7 +5,7 @@ import WavingHand from '../components/wavingHand';
 import rainbowAnimation from '../components/animations/rainbowAnimation';
 
 const Heading = styled.h2`
-  font-size: 1.3em;
+  font-size: 1.4em;
   display: inline-block;
 `;
 
@@ -17,7 +17,7 @@ const BodyTitle = styled.h3`
 
 const BodyPart = styled.h4`
   font-size: 1.1em;
-  margin-bottom: -0.5em;
+  margin-bottom: -0.6em;
 `;
 
 const Centered = styled.div`
@@ -25,7 +25,9 @@ const Centered = styled.div`
 `;
 
 const Image = styled.img`
-  border-radius: 10px;
+  border-radius: 0.5rem;
+  margin-top: 20px;
+  margin-bottom: 20px;
   &:hover {
     animation: ${rainbowAnimation} 1.5s infinite;
   }
@@ -36,7 +38,7 @@ const AboutPage: NextPage = () => {
     <>
       <Centered>
         <Image
-          alt="Me hugging a mythical creature statue in Macau."
+          alt="Me with a mythical creature statue in Macao."
           src="/img/avatar.jpg"
           width="50%"
         />
@@ -49,7 +51,7 @@ const AboutPage: NextPage = () => {
       </Centered>
       <Centered>
         <BodyPart>
-          Software Engineering Enthusiast based in{' '}
+          Software Engineering Enthusiast{' '}
           <span
             style={{ fontSize: '1.3em' }}
             aria-label="Kazakhstan flag"
@@ -59,13 +61,23 @@ const AboutPage: NextPage = () => {
           </span>
         </BodyPart>
         <BodyPart>
-          Junior student at <a href="https://unist.ac.kr">UNIST</a>{' '}
+          Junior CS student, <a href="https://unist.ac.kr">UNIST</a>{' '}
           <span
             style={{ fontSize: '1.3em' }}
             aria-label="South Korea flag"
             role="img"
           >
             🇰🇷
+          </span>
+        </BodyPart>
+        <BodyPart>
+          Freelance full-stack and mobile developer{' '}
+          <span
+            style={{ fontSize: '1.3em' }}
+            aria-label="World emoji"
+            role="img"
+          >
+            🌏
           </span>
         </BodyPart>
       </Centered>
@@ -77,7 +89,13 @@ const AboutPage: NextPage = () => {
           </span>{' '}
           Previously
         </BodyTitle>
-        <hr style={{ borderTop: '0.1px solid grey', maxWidth: '300px' }} />
+        <hr
+          style={{
+            borderTop: '0.1px solid black',
+            maxWidth: '300px',
+            opacity: 0.2,
+          }}
+        />
 
         <BodyPart>
           SWE Intern at <a href="https://hanbitco.com">Hanbitco</a>{' '}
@@ -93,10 +111,10 @@ const AboutPage: NextPage = () => {
           Co-Founder and SWE at <a href="https://resta.io">RESTA</a>{' '}
           <span
             style={{ fontSize: '1.3em' }}
-            aria-label="HongKong flag"
+            aria-label="HongKong and South Korea flags"
             role="img"
           >
-            🇭🇰
+            🇭🇰🇰🇷
           </span>
         </BodyPart>
         <BodyPart>
@@ -111,7 +129,7 @@ const AboutPage: NextPage = () => {
           </span>
         </BodyPart>
         <BodyPart>
-          Kazakh-Turkish High School alumni of 2017{' '}
+          Kazakh-Turkish Lyceum alumnus of 2017{' '}
           <span
             style={{ fontSize: '1.3em' }}
             aria-label="Turkey flag"
