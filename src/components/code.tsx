@@ -19,6 +19,22 @@ const Pre = styled.pre`
   border: 1px solid ${({ theme }): string => theme.darkBlue};
 `;
 
+const Line = styled.div`
+  display: table-row;
+`;
+
+const LineNo = styled.span`
+  display: table-cell;
+  text-align: right;
+  padding-right: 1em;
+  user-select: none;
+  opacity: 0.5;
+`;
+
+const LineContent = styled.span`
+  display: table-cell;
+`;
+
 const CodeBlock = ({ children, className }: Props): JSX.Element => {
   const language = className ? className.replace(/language-/, '') : '';
   const { value } = useDarkMode();
@@ -39,12 +55,15 @@ const CodeBlock = ({ children, className }: Props): JSX.Element => {
         <Pre className={_className} style={{ ...style }}>
           {tokens.map((line, i) => (
             // eslint-disable-next-line react/jsx-props-no-spreading, react/no-array-index-key
-            <div key={i} {...getLineProps({ line, key: i })}>
-              {line.map((token, key) => (
-                // eslint-disable-next-line react/jsx-props-no-spreading, react/no-array-index-key
-                <span key={key} {...getTokenProps({ token, key })} />
-              ))}
-            </div>
+            <Line key={i} {...getLineProps({ line, key: i })}>
+              <LineNo>{i + 1}</LineNo>
+              <LineContent>
+                {line.map((token, key) => (
+                  // eslint-disable-next-line react/jsx-props-no-spreading, react/no-array-index-key
+                  <span key={key} {...getTokenProps({ token, key })} />
+                ))}
+              </LineContent>
+            </Line>
           ))}
         </Pre>
       )}
