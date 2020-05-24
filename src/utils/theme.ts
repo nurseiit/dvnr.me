@@ -52,6 +52,8 @@ export const theme = {
   lightGray: `#bcbcbc`,
   lighterGray: `#e5e5e5`,
   lightestGray: `#f7f7f7`,
+  whiteTen: `rgba(255, 255, 255, 0.1)`,
+  blackTwenty: `rgba(0, 0, 0, 0.2)`,
 };
 
 const lightThemeBase = {
@@ -65,7 +67,7 @@ const lightThemeBase = {
   hoveredLinks: theme.orange,
 
   shadowColor: `#dbdbdb`,
-  borderColor: theme.lighterGray,
+  borderColor: theme.blackTwenty,
 
   headerBg: theme.darkerBlue,
   footerBg: theme.darkerGray,
@@ -90,7 +92,7 @@ const darkThemeBase = {
   hoveredLinks: theme.orange,
 
   shadowColor: `#1f1f1f`,
-  borderColor: `black`,
+  borderColor: theme.whiteTen,
 
   headerBg: theme.darkestBlue,
   footerBg: theme.darkestGray,
