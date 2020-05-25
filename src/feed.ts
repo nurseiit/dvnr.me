@@ -1,11 +1,12 @@
 export default [
   {
-    id: 'new-post',
-    title: 'New Post Title',
-    description: 'New Post Description',
+    id: 'ruined-expectations-from-unist',
+    title: 'Ruined expectations from UNIST',
+    description:
+      'Rants about what I like and (mostly) dislike about my university',
     tags: ['en'],
-    createdAt: '2020-05-19',
-    public: false,
+    createdAt: '2020-05-26',
+    public: true,
   },
   {
     id: 'test-code',
