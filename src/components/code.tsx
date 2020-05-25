@@ -41,6 +41,7 @@ const LineContent = styled.span`
 const CopyCode = styled.button`
   background: transparent;
   color: ${({ theme }): string => theme.textColor};
+  height: 35px;
   border-radius: 0.5rem;
   border: 1px solid ${({ theme }): string => theme.borderColor};
   cursor: pointer;
@@ -52,8 +53,9 @@ const CopyCode = styled.button`
 const Flex = styled.div`
   display: flex;
   justify-content: flex-end;
-  margin-top: -65px;
-  margin-right: 3px;
+  position: relative;
+  margin-top: -4rem;
+  margin-right: 0.2rem;
 `;
 
 const CodeBlock = ({ children, className }: Props): JSX.Element => {
