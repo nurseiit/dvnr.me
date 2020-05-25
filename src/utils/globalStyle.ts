@@ -20,5 +20,13 @@ export default createGlobalStyle`
       background: ${(props: Props): string => props.theme.inlineCodeBg};
       color: ${(props: Props): string => props.theme.inlineCodeColor};
     }
+
+    blockquote {
+      margin-left: 1em;
+      font-size: 1em;
+      border-left: 3px solid ${(props: Props): string =>
+        props.theme.inlineCodeColor};
+      color: ${(props: Props): string => props.theme.inlineCodeColor};
+    }
   }
 `;
