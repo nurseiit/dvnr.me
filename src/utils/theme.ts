@@ -20,6 +20,7 @@ export interface Theme {
   grayHoveredButtonBg: string;
 
   inlineCodeColor: string;
+  inlineCodeBg: string;
 }
 
 export const theme = {
@@ -51,6 +52,8 @@ export const theme = {
   lightGray: `#bcbcbc`,
   lighterGray: `#e5e5e5`,
   lightestGray: `#f7f7f7`,
+  whiteTen: `rgba(255, 255, 255, 0.1)`,
+  blackTwenty: `rgba(0, 0, 0, 0.2)`,
 };
 
 const lightThemeBase = {
@@ -64,7 +67,7 @@ const lightThemeBase = {
   hoveredLinks: theme.orange,
 
   shadowColor: `#dbdbdb`,
-  borderColor: theme.lighterGray,
+  borderColor: theme.blackTwenty,
 
   headerBg: theme.darkerBlue,
   footerBg: theme.darkerGray,
@@ -74,7 +77,8 @@ const lightThemeBase = {
   grayButtonBg: theme.lightestGray,
   grayHoveredButtonBg: theme.orange,
 
-  inlineCodeColor: theme.lighterGray,
+  inlineCodeColor: '#1a1a1a',
+  inlineCodeBg: 'rgba(255, 229, 100, 0.2)',
 };
 
 const darkThemeBase = {
@@ -88,7 +92,7 @@ const darkThemeBase = {
   hoveredLinks: theme.orange,
 
   shadowColor: `#1f1f1f`,
-  borderColor: `black`,
+  borderColor: theme.whiteTen,
 
   headerBg: theme.darkestBlue,
   footerBg: theme.darkestGray,
@@ -98,7 +102,8 @@ const darkThemeBase = {
   grayButtonBg: theme.darkGray,
   grayHoveredButtonBg: theme.orange,
 
-  inlineCodeColor: theme.darkGray,
+  inlineCodeColor: '#e6e6e6',
+  inlineCodeBg: 'rgba(115, 124, 153, 0.2)',
 };
 
 export const darkTheme: Theme = { ...theme, ...darkThemeBase };

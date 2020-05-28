@@ -14,8 +14,6 @@ const Flex = styled.div`
 const MainLink = styled.a`
   color: #319795;
   text-decoration: underline;
-  font-weight: 400;
-  font-size: 1.2rem;
 `;
 
 const IconButton = styled.button`
@@ -35,27 +33,19 @@ const Header = (): JSX.Element => {
   const darkMode = useDarkMode();
   const [colorMode, toggleColorMode] = [darkMode.value, darkMode.toggle];
   return (
-    <Flex>
+    <Flex style={{ marginBottom: '-10px', marginTop: '20px' }}>
       <div>
         <Link href="/">
-          <h1
-            style={{
-              fontWeight: 1000,
-              fontSize: '2.5em',
-              marginTop: '-0.5em',
-            }}
-          >
+          <h1>
             <Heading href="/">
-              <pre>/dev/nur</pre>
+              <pre style={{ fontSize: '35px' }}>/dev/nur</pre>
             </Heading>
           </h1>
         </Link>
 
         <p
           style={{
-            fontWeight: 500,
             display: 'block',
-            fontSize: '1.2em',
             marginTop: '-1.5em',
             marginBottom: '1em',
           }}
@@ -93,7 +83,7 @@ interface Props {
 }
 
 const Layout = ({ children }: Props): JSX.Element => (
-  <div style={{ margin: 'auto', maxWidth: '660px' }}>
+  <div style={{ margin: 'auto', maxWidth: '730px' }}>
     <div style={{ margin: 'auto 20px' }}>
       <Header />
       {children}

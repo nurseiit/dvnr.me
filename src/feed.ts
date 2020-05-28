@@ -1,5 +1,14 @@
 export default [
   {
+    id: 'ruined-expectations-from-unist',
+    title: 'Ruined expectations from UNIST',
+    description:
+      'Rants about what I like and (mostly) dislike about my university',
+    tags: ['en'],
+    createdAt: '2020-05-26',
+    public: true,
+  },
+  {
     id: 'test-code',
     title: 'Testing Code In MDX',
     description: 'Check if code wrapper components work.',

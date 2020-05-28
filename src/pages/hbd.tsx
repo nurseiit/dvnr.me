@@ -6,8 +6,8 @@ import styled from 'styled-components';
 const CardShell = styled.div`
   cursor: pointer;
   margin: auto auto 50px auto;
-  width: 320px;
-  height: 470px;
+  width: 340px;
+  height: 500px;
   text-align: center;
   color: black;
   background-color: #f7f6f1;
