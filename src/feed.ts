@@ -3,8 +3,8 @@ export default [
     id: 'ruined-expectations-from-unist',
     title: 'Ruined expectations from UNIST',
     description:
-      'Rants about what I like and (mostly) dislike about my university',
-    tags: ['en'],
+      'Rants about what I like and (mostly) dislike about my university.',
+    tags: ['en', 'rants', 'university'],
     createdAt: '2020-05-26',
     public: true,
   },
