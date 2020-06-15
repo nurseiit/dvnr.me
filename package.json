@@ -28,7 +28,7 @@
     "react-typography": "^0.16.19",
     "rehype-katex": "^3.0.0",
     "remark-math": "^2.0.1",
-    "styled-components": "^5.1.0",
+    "styled-components": "^5.1.1",
     "typeface-merriweather": "^0.0.72",
     "typeface-open-sans": "^0.0.75",
     "typography": "^0.16.19",
