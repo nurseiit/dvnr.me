@@ -1,4 +1,4 @@
-import { compareAsc } from 'date-fns';
+import { compareDesc } from 'date-fns';
 import allPosts from '../feed';
 
 export interface PostMeta {
@@ -34,7 +34,7 @@ function filterPublic(feed: PostMeta[]): PostMeta[] {
 }
 
 function sortPosts(feed: Post[]): Post[] {
-  feed.sort((a, b) => compareAsc(a.createdAt, b.createdAt));
+  feed.sort((a, b) => compareDesc(a.createdAt, b.createdAt));
   return feed;
 }
 
