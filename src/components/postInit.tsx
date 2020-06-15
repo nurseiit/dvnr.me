@@ -1,5 +1,6 @@
 import React from 'react';
 import Head from 'next/head';
+import { format } from 'date-fns';
 
 import { findPost } from '../utils/posts';
 import { rhythm } from '../utils/typography';
@@ -17,7 +18,7 @@ const PostInit = ({ id }: Props): JSX.Element => {
       </Head>
       <h1 style={{ marginBottom: '0' }}>{post.title}</h1>
       <span style={{ fontSize: rhythm(1 / 2) }}>
-        {post.createdAt.format('MMMM D, YYYY')}
+        {format(post.createdAt, 'MMMM d, yyyy')}
       </span>
       <p />
     </>

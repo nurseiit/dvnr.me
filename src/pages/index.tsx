@@ -2,6 +2,7 @@ import React from 'react';
 import { NextPage } from 'next';
 import Link from 'next/link';
 import styled from 'styled-components';
+import { format } from 'date-fns';
 import { getPosts } from '../utils/posts';
 import { rhythm } from '../utils/typography';
 
@@ -32,7 +33,7 @@ const Index: NextPage = () => {
             </Link>
           </Title>
           <span style={{ fontSize: rhythm(1 / 2) }}>
-            {post.createdAt.format('MMMM D, YYYY')}
+            {format(post.createdAt, 'MMMM d, yyyy')}
           </span>
           <Description>
             {'> '}
