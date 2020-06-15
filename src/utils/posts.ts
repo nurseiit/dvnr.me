@@ -34,7 +34,7 @@ function filterPublic(feed: PostMeta[]): PostMeta[] {
 }
 
 function sortPosts(feed: Post[]): Post[] {
-  feed.sort((a, b) => compareAsc(a, b));
+  feed.sort((a, b) => compareAsc(a.createdAt, b.createdAt));
   return feed;
 }
 
