@@ -11,11 +11,6 @@ const Flex = styled.div`
   align-items: center;
 `;
 
-const MainLink = styled.a`
-  color: #319795;
-  text-decoration: underline;
-`;
-
 const IconButton = styled.button`
   cursor: pointer;
   padding: 5px;
@@ -52,7 +47,7 @@ const Header = (): JSX.Element => {
         >
           inspirations by{' '}
           <Link href="/about">
-            <MainLink href="/about">Nurseiit A.</MainLink>
+            <a href="/about">Nurseiit A.</a>
           </Link>
         </p>
       </div>
@@ -66,14 +61,12 @@ const Header = (): JSX.Element => {
 const Footer = (): JSX.Element => (
   <Flex>
     <div>
-      <MainLink href="mailto:nurs@unist.ac.kr">mail</MainLink> &bull;{' '}
-      <MainLink href="https://www.linkedin.com/in/nurseiit">linkedin</MainLink>{' '}
-      &bull; <MainLink href="https://github.com/nurseiit">github</MainLink>
+      <a href="mailto:nurs@unist.ac.kr">mail</a> &bull;{' '}
+      <a href="https://www.linkedin.com/in/nurseiit">linkedin</a> &bull;{' '}
+      <a href="https://github.com/nurseiit">github</a>
     </div>
     <div>
-      <MainLink href="https://github.com/nurseiit/devnur.me">
-        edit this page
-      </MainLink>
+      <a href="https://github.com/nurseiit/devnur.me">edit this page</a>
     </div>
   </Flex>
 );
