@@ -61,8 +61,8 @@ const Header = (): JSX.Element => {
 const Footer = (): JSX.Element => (
   <Flex>
     <div>
-      <a href="mailto:nurs@unist.ac.kr">mail</a> &bull;{' '}
-      <a href="https://www.linkedin.com/in/nurseiit">linkedin</a> &bull;{' '}
+      <a href="/rss">rss</a> &bull; <a href="mailto:nurs@unist.ac.kr">mail</a>{' '}
+      &bull; <a href="https://www.linkedin.com/in/nurseiit">linkedin</a> &bull;{' '}
       <a href="https://github.com/nurseiit">github</a>
     </div>
     <div>
