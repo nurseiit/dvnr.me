@@ -58,6 +58,17 @@ const Flex = styled.div`
   margin-right: 0.2rem;
 `;
 
+const CodeWrapper = styled.div`
+  min-width: 125%;
+  max-width: 125%;
+  margin-left: -12.5%;
+  @media (max-width: 875px) {
+    max-width: 100%;
+    min-width: 100%;
+    margin-left: 0;
+  }
+`;
+
 const CodeBlock = ({ children, className }: Props): JSX.Element => {
   const language = className ? className.replace(/language-/, '') : '';
   const { value } = useDarkMode();
@@ -68,7 +79,7 @@ const CodeBlock = ({ children, className }: Props): JSX.Element => {
     return navigator.clipboard.writeText(children);
   };
   return (
-    <>
+    <CodeWrapper>
       <Highlight
         {...defaultProps}
         theme={value ? nightOwl : nightOwlLight}
@@ -103,7 +114,7 @@ const CodeBlock = ({ children, className }: Props): JSX.Element => {
           <Copy size="15px" />
         </CopyCode>
       </Flex>
-    </>
+    </CodeWrapper>
   );
 };
 
