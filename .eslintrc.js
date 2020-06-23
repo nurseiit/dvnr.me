@@ -4,27 +4,27 @@ module.exports = {
     ecmaVersion: 2018,
     sourceType: 'module',
     ecmaFeatures: {
-      jsx: true
-    }
+      jsx: true,
+    },
   },
   settings: {
     react: {
-      version: 'detect'
+      version: 'detect',
     },
     'import/resolver': {
       node: {
-        extensions: ['.ts', '.tsx', '.js', '.jsx']
-      }
-    }
+        extensions: ['.ts', '.tsx', '.js', '.jsx'],
+      },
+    },
   },
   plugins: ['@typescript-eslint', 'react', 'prettier'],
   env: {
     browser: true,
-    es6: true
+    es6: true,
   },
   globals: {
     Atomics: 'readonly',
-    SharedArrayBuffer: 'readonly'
+    SharedArrayBuffer: 'readonly',
   },
   extends: [
     'airbnb',
@@ -32,7 +32,7 @@ module.exports = {
     'plugin:react/recommended',
     'plugin:prettier/recommended',
     'prettier',
-    'prettier/react'
+    'prettier/react',
   ],
   rules: {
     'import/extensions': [1, { extensions: ['.ts', '.tsx'] }],
@@ -40,8 +40,8 @@ module.exports = {
     'react/jsx-props-no-spreading': [
       1,
       {
-        custom: 'ignore'
-      }
-    ]
-  }
+        custom: 'ignore',
+      },
+    ],
+  },
 };
