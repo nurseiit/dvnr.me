@@ -2,6 +2,10 @@ import React from 'react';
 import { NextPage } from 'next';
 import styled from 'styled-components';
 
+interface ErrorProps {
+  statusCode?: number;
+}
+
 const Centered = styled.div`
   text-align: center;
   font-size: 1.2em;
@@ -15,7 +19,7 @@ const BigText = styled.h2`
   font-size: 2em;
 `;
 
-const ErrorText = ({ statusCode }: any): JSX.Element => (
+const ErrorText = ({ statusCode }: ErrorProps): JSX.Element => (
   <>
     <Centered>
       <BigText>{statusCode}</BigText>
@@ -27,7 +31,7 @@ const ErrorText = ({ statusCode }: any): JSX.Element => (
   </>
 );
 
-const Error: NextPage = ({ statusCode }: any) => (
+const Error: NextPage<ErrorProps> = ({ statusCode }: ErrorProps) => (
   <>
     <Centered>
       <Image src="/img/bear_error.png" />
@@ -37,7 +41,7 @@ const Error: NextPage = ({ statusCode }: any) => (
   </>
 );
 
-Error.getInitialProps = ({ res, err }): any => {
+Error.getInitialProps = ({ res, err }): ErrorProps => {
   // eslint-disable-next-line no-nested-ternary
   const statusCode = res ? res.statusCode : err ? err.statusCode : 404;
   return { statusCode };
