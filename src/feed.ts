@@ -1,5 +1,13 @@
 export default [
   {
+    id: 'quit-facebook-ecosystem',
+    title: '#quitFacebookEcosystem',
+    description: 'Why leave social media backed by Big Brother - Facebook?',
+    tags: ['en', 'social-media', 'privacy'],
+    createdAt: '2020-06-25',
+    public: true,
+  },
+  {
     id: 'ruined-expectations-from-unist',
     title: 'Ruined expectations from UNIST',
     description:
