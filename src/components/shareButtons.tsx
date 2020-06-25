@@ -103,39 +103,15 @@ const ShareButtons = ({ id }: Props): JSX.Element => {
           stroke: none;
         }
 
-        .resp-sharing-button--twitter {
-          background-color: #55acee;
-        }
-
-        .resp-sharing-button--twitter:hover {
-          background-color: #2795e9;
-        }
-
         .resp-sharing-button--reddit {
-          background-color: #5f99cf;
-        }
-
-        .resp-sharing-button--reddit:hover {
-          background-color: #3a80c1;
-        }
-
-        .resp-sharing-button--vk {
-          background-color: #507299;
-        }
-
-        .resp-sharing-button--vk:hover {
-          background-color: #43648c;
-        }
-
-        .resp-sharing-button--reddit {
-          background-color: #5f99cf;
-          border-color: #5f99cf;
+          background-color: #ff5700;
+          border-color: #ff5700;
         }
 
         .resp-sharing-button--reddit:hover,
         .resp-sharing-button--reddit:active {
-          background-color: #3a80c1;
-          border-color: #3a80c1;
+          background-color: #ff4500;
+          border-color: #ff4500;
         }
 
         .resp-sharing-button--twitter {
@@ -154,7 +130,8 @@ const ShareButtons = ({ id }: Props): JSX.Element => {
           border-color: #507299;
         }
 
-        .resp-sharing-button--vk:hover .resp-sharing-button--vk:active {
+        .resp-sharing-button--vk:hover,
+        .resp-sharing-button--vk:active {
           background-color: #43648c;
           border-color: #43648c;
         }
