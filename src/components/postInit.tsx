@@ -1,7 +1,7 @@
 import React from 'react';
 import Head from 'next/head';
 import { format } from 'date-fns';
-import { BlogJsonLd } from 'next-seo';
+import { NextSeo } from 'next-seo';
 
 import { findPost } from '../utils/posts';
 import { rhythm } from '../utils/typography';
@@ -23,14 +23,21 @@ const PostInit = ({ id, imagePath }: Props): JSX.Element => {
         {format(post.createdAt, 'MMMM d, yyyy')}
       </span>
       <p />
-      <BlogJsonLd
-        url={`https://devnur.me/posts/${post.id}`}
+      <NextSeo
         title={post.title}
-        images={imagePath ? [`https://devnur.me${imagePath}`] : undefined}
-        datePublished={post.createdAt.toISOString()}
-        dateModified={post.updatedAt.toISOString()}
-        authorName="Nurseiit A."
         description={post.description}
+        openGraph={{
+          url: `https://devnur.me/posts/${post.id}`,
+          type: 'blog',
+          locale: 'en_UK',
+          images: [
+            {
+              url: `https://devnur.me${
+                imagePath ? '/img/quitFacebookEcosystem-banner.jpg' : imagePath
+              }`,
+            },
+          ],
+        }}
       />
     </>
   );
