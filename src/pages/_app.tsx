@@ -3,6 +3,9 @@ import NProgress from 'nprogress';
 import App from 'next/app';
 import Head from 'next/head';
 import Router from 'next/router';
+import { DefaultSeo } from 'next-seo';
+
+import SEO from '../next-seo.config';
 import GlobalStyle from '../utils/globalStyle';
 import 'typeface-merriweather';
 import 'typeface-open-sans';
@@ -23,11 +26,12 @@ class MyApp extends App {
     return (
       <Providers>
         <Head>
-          <title>devnur &mdash; inspirations by Nurseiit A.</title>
+          <title>/dev/nur &mdash; inspirations by Nurseiit A.</title>
           {/* Import CSS for nprogress */}
           <link rel="stylesheet" type="text/css" href="/nprogress.css" />
         </Head>
         <GlobalStyle />
+        <DefaultSeo {...SEO} />
         <Layout>
           <Component {...pageProps} />
         </Layout>
