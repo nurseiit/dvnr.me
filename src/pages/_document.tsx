@@ -66,6 +66,12 @@ export default class MyDocument extends Document {
             sizes="16x16"
             href="/icons/favicon-16x16.png"
           />
+          <link
+            rel="alternate"
+            type="application/rss+xml"
+            title="RSS Feed for public posts"
+            href="https://devnur.me/rss"
+          />
           <TypographyStyle typography={typography} />
         </Head>
         <body>
