@@ -1,6 +1,6 @@
 {
   "name": "devnur.me",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "🚁 /dev/nur – a minimalist blog built with Next.js.",
   "main": "src/pages/index.tsx",
   "repository": "git@github.com:nurseiit/devnur.me.git",
