@@ -6,7 +6,8 @@ interface Props {
 }
 
 const ShareButtons = ({ id }: Props): JSX.Element => {
-  const { title } = findPost(id);
+  // should handle # cases separately for twitter to work
+  const encodedTitle = encodeURI(findPost(id).title).replace(/#/g, '%23');
   return (
     <div>
       <a
@@ -30,7 +31,7 @@ const ShareButtons = ({ id }: Props): JSX.Element => {
 
       <a
         className="resp-sharing-button__link"
-        href={`https://twitter.com/intent/tweet/?text=${title}&url=https%3A%2F%2Fdevnur.me%2Fposts%2F${id}`}
+        href={`https://twitter.com/intent/tweet/?text=${encodedTitle}&url=https%3A%2F%2Fdevnur.me%2Fposts%2F${id}`}
         target="_blank"
         rel="noreferrer noopener"
         aria-label=""
@@ -49,7 +50,7 @@ const ShareButtons = ({ id }: Props): JSX.Element => {
 
       <a
         className="resp-sharing-button__link"
-        href={`http://vk.com/share.php?title=${title}&url=https%3A%2F%2Fdevnur.me%2Fposts%2F${id}`}
+        href={`http://vk.com/share.php?title=${encodedTitle}&url=https%3A%2F%2Fdevnur.me%2Fposts%2F${id}`}
         target="_blank"
         rel="noreferrer noopener"
         aria-label=""
