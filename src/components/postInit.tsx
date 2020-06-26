@@ -29,12 +29,12 @@ const PostInit = ({ id, imagePath }: Props): JSX.Element => {
         openGraph={{
           title: post.title,
           description: post.description,
-          url: `https://beta.devnur.me/posts/${post.id}`,
+          url: `https://devnur.me/posts/${post.id}`,
           type: 'blog',
           locale: 'en_UK',
           images: [
             {
-              url: `https://beta.devnur.me${
+              url: `https://devnur.me${
                 imagePath ? '/img/quitFacebookEcosystem-banner.jpg' : imagePath
               }`,
             },
