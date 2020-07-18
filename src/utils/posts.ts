@@ -18,6 +18,7 @@ export interface Post {
   updatedAt: Date;
   description: string;
   tags: string[];
+  public: boolean;
 }
 
 function parsePosts(feed: PostMeta[]): Post[] {
