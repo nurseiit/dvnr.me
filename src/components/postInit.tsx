@@ -8,10 +8,13 @@ import { rhythm } from '../utils/typography';
 
 interface Props {
   id: string;
-  imagePath?: string;
+  imagePath: string;
 }
 
-const PostInit = ({ id, imagePath }: Props): JSX.Element => {
+const PostInit = ({
+  id,
+  imagePath = '/img/quitFacebookEcosystem-banner.jpg',
+}: Props): JSX.Element => {
   const post = findPost(id);
   return (
     <>
@@ -34,9 +37,7 @@ const PostInit = ({ id, imagePath }: Props): JSX.Element => {
           locale: 'en_UK',
           images: [
             {
-              url: `https://devnur.me${
-                imagePath ? '/img/quitFacebookEcosystem-banner.jpg' : imagePath
-              }`,
+              url: `https://devnur.me${imagePath}`,
             },
           ],
         }}

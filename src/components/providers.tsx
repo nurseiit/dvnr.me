@@ -7,8 +7,8 @@ import components from './mdx';
 
 import { lightTheme, darkTheme } from '../utils/theme';
 
-// eslint-disable-next-line @typescript-eslint/explicit-function-return-type
-export default ({ children }) => {
+// eslint-disable-next-line @typescript-eslint/explicit-module-boundary-types
+export default ({ children }): JSX.Element => {
   const { value } = useDarkMode();
   const theme = value ? darkTheme : lightTheme;
 
