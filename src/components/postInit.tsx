@@ -2,6 +2,7 @@ import React from 'react';
 import Head from 'next/head';
 import { format } from 'date-fns';
 import { NextSeo } from 'next-seo';
+import useDarkMode from 'use-dark-mode';
 
 import { findPost } from '../utils/posts';
 import { rhythm } from '../utils/typography';
@@ -16,6 +17,7 @@ const PostInit = ({
   imagePath = '/img/quitFacebookEcosystem-banner.jpg',
 }: Props): JSX.Element => {
   const post = findPost(id);
+  const { value } = useDarkMode();
   return (
     <>
       <Head>
@@ -25,7 +27,31 @@ const PostInit = ({
       <span style={{ fontSize: rhythm(1 / 2) }}>
         {format(post.createdAt, 'MMMM d, yyyy')}
       </span>
+      <div
+        style={{ display: 'flex', marginTop: '10px', marginBottom: '-30px' }}
+      >
+        <span
+          role="img"
+          aria-label="views"
+          style={{
+            fontSize: '25px',
+            marginTop: '-10px',
+            marginRight: '10px',
+          }}
+        >
+          👀
+        </span>
+        <img
+          src={`https://views.show/svg?key=${post.id}&unique=1&size=30&fill=${
+            value ? 'fff' : '212529'
+          }&family=monospace&suffix=%20unique%20views`}
+          alt=""
+          width="300px"
+          height="30px"
+        />
+      </div>
       <p />
+
       <NextSeo
         title={post.title}
         description={post.description}
