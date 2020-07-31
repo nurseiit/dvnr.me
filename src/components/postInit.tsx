@@ -31,7 +31,7 @@ const PostInit = ({
         style={{ display: 'flex', marginTop: '10px', marginBottom: '-30px' }}
       >
         <img
-          src={`https://views.show/svg?key=${post.id}&unique=1&size=23&fill=${
+          src={`https://views.show/svg?key=${post.id}&size=23&fill=${
             value ? 'fff' : '212529'
           }&family=monospace`}
           alt=""
