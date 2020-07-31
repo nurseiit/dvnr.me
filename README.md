@@ -21,7 +21,7 @@ MIT
 
 [lgtm grade]: https://img.shields.io/lgtm/grade/javascript/github/nurseiit/devnur.me
 [lgtm status]: https://lgtm.com/projects/g/nurseiit/devnur.me/context:javascript
-[build status]: https://travis-ci.org/nurseiit/devnur.me.svg?branch=master
-[build link]: https://travis-ci.org/nurseiit/devnur.me
+[build status]: https://travis-ci.com/nurseiit/devnur.me.svg?branch=master
+[build link]: https://travis-ci.com/nurseiit/devnur.me
 [coverage status]: https://coveralls.io/repos/github/nurseiit/devnur.me/badge.svg?branch=master
 [coverage link]: https://coveralls.io/github/nurseiit/devnur.me?branch=master
