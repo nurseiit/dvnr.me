@@ -5,7 +5,7 @@ export default [
     description: 'How Do They Do It? Content Blocking, Kazakhstan Edition.',
     tags: ['en', 'networks', 'privacy'],
     createdAt: '2020-07-01',
-    public: true,
+    public: false,
   },
   {
     id: 'quit-facebook-ecosystem',
