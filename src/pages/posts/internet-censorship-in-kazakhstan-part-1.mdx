@@ -13,4 +13,34 @@ import ShareButtons from '../../components/shareButtons';
 > [here](https://informburo.kz/stati/page-not-found-kto-kak-i-zachem-blokiruet-sayty-v-kazahstane-.html)
 > and [here](https://forbes.kz/news/2019/08/09/newsid_205558) <span style={{ fontSize: '30px', fontStyle: 'normal' }}>💁‍♂️</span>
 
+## How Browsers Connect To Websites
+
+todo brief intro to web.
+
+todo explain hops, lookups (intro to traceroute).
+
+## IP Blocking
+
+Let's open up [archive.org](https://archive.org):
+
+![archive_safari](/img/internet-censorship-in-kazakhstan-part-1/archive_safari.png 'Archive.org in Safari')
+
+Okay, Safari can't even tell what's wrong with the connection so it just times out.
+Let's see what's happening under the hood via `traceroute`:
+
+```bash
+$ traceroute archive.org
+
+traceroute to archive.org (207.241.224.2), 64 hops max, 52 byte packets
+ 1  192.168.1.1 (192.168.1.1)  2.005 ms  1.308 ms  1.215 ms
+ 2  82.200.242.199 (82.200.242.199)  1.646 ms  1.606 ms  3.444 ms
+ 3  82.200.243.116 (82.200.243.116)  56.544 ms  54.231 ms  59.570 ms
+ 4  * * *
+ 5  * * *
+ 6  * * *
+ 7  * * *
+```
+
+You can tell that it gets stuck at `82.200.243.116` which belongs to "JSC Kazakhtelecom".
+
 <ShareButtons id="internet-censorship-in-kazakhstan-part-1" />
