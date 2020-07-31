@@ -27,6 +27,8 @@ class MyApp extends App {
       <Providers>
         <Head>
           <title>/dev/nur &mdash; inspirations by Nurseiit A.</title>
+          {/* https://err.sh/next.js/no-document-viewport-meta */}
+          <meta name="viewport" content="width=device-width,initial-scale=1" />
           {/* Import CSS for nprogress */}
           <link rel="stylesheet" type="text/css" href="/nprogress.css" />
         </Head>
