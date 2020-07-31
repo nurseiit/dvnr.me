@@ -30,21 +30,10 @@ const PostInit = ({
       <div
         style={{ display: 'flex', marginTop: '10px', marginBottom: '-30px' }}
       >
-        <span
-          role="img"
-          aria-label="views"
-          style={{
-            fontSize: '25px',
-            marginTop: '-10px',
-            marginRight: '10px',
-          }}
-        >
-          👀
-        </span>
         <img
-          src={`https://views.show/svg?key=${post.id}&unique=1&size=30&fill=${
+          src={`https://views.show/svg?key=${post.id}&unique=1&size=23&fill=${
             value ? 'fff' : '212529'
-          }&family=monospace&suffix=%20unique%20views`}
+          }&family=monospace`}
           alt=""
           width="300px"
           height="30px"
