@@ -7,8 +7,7 @@ import components from './mdx';
 
 import { lightTheme, darkTheme } from '../utils/theme';
 
-// eslint-disable-next-line @typescript-eslint/explicit-module-boundary-types
-export default ({ children }): JSX.Element => {
+const Providers: React.FC = ({ children }) => {
   const { value } = useDarkMode();
   const theme = value ? darkTheme : lightTheme;
 
@@ -31,3 +30,5 @@ export default ({ children }): JSX.Element => {
 
   return body;
 };
+
+export default Providers;
