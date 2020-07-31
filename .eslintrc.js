@@ -21,6 +21,8 @@ module.exports = {
   env: {
     browser: true,
     es6: true,
+    jest: true,
+    node: true,
   },
   globals: {
     Atomics: 'readonly',
@@ -28,8 +30,8 @@ module.exports = {
   },
   extends: [
     'airbnb',
-    'plugin:@typescript-eslint/recommended',
     'plugin:react/recommended',
+    'plugin:@typescript-eslint/recommended',
     'plugin:prettier/recommended',
     'prettier',
     'prettier/react',

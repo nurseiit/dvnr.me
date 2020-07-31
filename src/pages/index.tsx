@@ -7,7 +7,6 @@ import { getPosts } from '../utils/posts';
 import { rhythm } from '../utils/typography';
 
 const Title = styled.h2`
-  font-size: 1.5rem;
   padding-top: 1rem;
   color: #80a1d6;
   font-weight: 900;
@@ -15,7 +14,6 @@ const Title = styled.h2`
 `;
 
 const Description = styled.div`
-  font-size: 1.1rem;
   font-weight: 300;
   padding-top: 0.5em;
   padding-bottom: 0.5em;

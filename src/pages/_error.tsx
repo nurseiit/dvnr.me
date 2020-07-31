@@ -3,7 +3,7 @@ import { NextPage } from 'next';
 import styled from 'styled-components';
 
 interface ErrorProps {
-  statusCode?: number;
+  statusCode: number;
 }
 
 const Centered = styled.div`

@@ -2,17 +2,22 @@ import React from 'react';
 import Head from 'next/head';
 import { format } from 'date-fns';
 import { NextSeo } from 'next-seo';
+import useDarkMode from 'use-dark-mode';
 
 import { findPost } from '../utils/posts';
 import { rhythm } from '../utils/typography';
 
 interface Props {
   id: string;
-  imagePath?: string;
+  imagePath: string;
 }
 
-const PostInit = ({ id, imagePath }: Props): JSX.Element => {
+const PostInit = ({
+  id,
+  imagePath = '/img/quitFacebookEcosystem-banner.jpg',
+}: Props): JSX.Element => {
   const post = findPost(id);
+  const { value } = useDarkMode();
   return (
     <>
       <Head>
@@ -22,7 +27,20 @@ const PostInit = ({ id, imagePath }: Props): JSX.Element => {
       <span style={{ fontSize: rhythm(1 / 2) }}>
         {format(post.createdAt, 'MMMM d, yyyy')}
       </span>
+      <div
+        style={{ display: 'flex', marginTop: '10px', marginBottom: '-30px' }}
+      >
+        <img
+          src={`https://views.show/svg?key=${post.id}&unique=1&size=23&fill=${
+            value ? 'fff' : '212529'
+          }&family=monospace`}
+          alt=""
+          width="300px"
+          height="30px"
+        />
+      </div>
       <p />
+
       <NextSeo
         title={post.title}
         description={post.description}
@@ -34,9 +52,7 @@ const PostInit = ({ id, imagePath }: Props): JSX.Element => {
           locale: 'en_UK',
           images: [
             {
-              url: `https://devnur.me${
-                imagePath ? '/img/quitFacebookEcosystem-banner.jpg' : imagePath
-              }`,
+              url: `https://devnur.me${imagePath}`,
             },
           ],
         }}

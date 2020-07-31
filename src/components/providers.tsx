@@ -7,8 +7,7 @@ import components from './mdx';
 
 import { lightTheme, darkTheme } from '../utils/theme';
 
-// eslint-disable-next-line @typescript-eslint/explicit-function-return-type
-export default ({ children }) => {
+const Providers: React.FC = ({ children }) => {
   const { value } = useDarkMode();
   const theme = value ? darkTheme : lightTheme;
 
@@ -31,3 +30,5 @@ export default ({ children }) => {
 
   return body;
 };
+
+export default Providers;
