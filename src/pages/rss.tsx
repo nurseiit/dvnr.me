@@ -11,7 +11,7 @@ const getRssXml = (): string => {
         <item>
           <title>${post.title}</title>
           <link>
-            https://devnur.me/posts/${post.id}
+            https://dvnr.me/posts/${post.id}
           </link>
           <pubDate>${post.createdAt}</pubDate>
           <description>
@@ -24,8 +24,8 @@ const getRssXml = (): string => {
   return `<?xml version="1.0" ?>
   <rss version="2.0">
     <channel>
-        <title>devnur – inspirations by Nurseiit A.</title>
-        <link>https://devnur.me</link>
+        <title>/dev/nur – inspirations by Nurseiit A.</title>
+        <link>https://dvnr.me</link>
         <description>🚁 /dev/nur – a minimalist blog built with Next.js.</description>
         <language>en</language>
         <lastBuildDate>${latestPostDate}</lastBuildDate>

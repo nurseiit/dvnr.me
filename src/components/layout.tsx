@@ -66,7 +66,7 @@ const Footer = (): JSX.Element => (
       <a href="https://github.com/nurseiit">github</a>
     </div>
     <div>
-      <a href="https://github.com/nurseiit/devnur.me">edit this page</a>
+      <a href="https://github.com/nurseiit/dvnr.me">edit this page</a>
     </div>
   </Flex>
 );

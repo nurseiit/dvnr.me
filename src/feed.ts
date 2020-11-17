@@ -1,13 +1,5 @@
 export default [
   {
-    id: 'internet-censorship-in-kazakhstan-part-1',
-    title: 'Internet Censorship In Kazakhstan, Part 1',
-    description: 'How Do They Do It? Content Blocking, Kazakhstan Edition.',
-    tags: ['en', 'networks', 'privacy'],
-    createdAt: '2020-07-01',
-    public: false,
-  },
-  {
     id: 'quit-facebook-ecosystem',
     title: '#quitFacebookEcosystem',
     description: 'Why leave social media backed by Big Brother - Facebook?',

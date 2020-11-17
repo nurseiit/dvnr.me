@@ -70,7 +70,7 @@ export default class MyDocument extends Document {
             rel="alternate"
             type="application/rss+xml"
             title="RSS Feed for public posts"
-            href="https://devnur.me/rss"
+            href="https://dvnr.me/rss"
           />
           <TypographyStyle typography={typography} />
         </Head>
