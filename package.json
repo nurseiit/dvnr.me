@@ -20,7 +20,7 @@
   "dependencies": {
     "@mdx-js/react": "1.6.16",
     "@styled-icons/feather": "^10.6.0",
-    "date-fns": "^2.15.0",
+    "date-fns": "^2.16.1",
     "next": "^9.5.4",
     "next-seo": "^4.7.3",
     "nprogress": "^0.2.0",
