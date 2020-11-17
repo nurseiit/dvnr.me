@@ -12,7 +12,7 @@ const ShareButtons = ({ id }: Props): JSX.Element => {
     <div>
       <a
         className="resp-sharing-button__link"
-        href={`https://reddit.com/submit/?url=https%3A%2F%2Fdevnur.me%2Fposts%2F${id}&resubmit=true&title=${encodedTitle}`}
+        href={`https://reddit.com/submit/?url=https%3A%2F%2Fdvnr.me%2Fposts%2F${id}&resubmit=true&title=${encodedTitle}`}
         target="_blank"
         rel="noreferrer noopener"
         aria-label="Share on Reddit"
@@ -31,7 +31,7 @@ const ShareButtons = ({ id }: Props): JSX.Element => {
 
       <a
         className="resp-sharing-button__link"
-        href={`https://twitter.com/intent/tweet/?text=${encodedTitle}&url=https%3A%2F%2Fdevnur.me%2Fposts%2F${id}`}
+        href={`https://twitter.com/intent/tweet/?text=${encodedTitle}&url=https%3A%2F%2Fdvnr.me%2Fposts%2F${id}`}
         target="_blank"
         rel="noreferrer noopener"
         aria-label=""
@@ -50,7 +50,7 @@ const ShareButtons = ({ id }: Props): JSX.Element => {
 
       <a
         className="resp-sharing-button__link"
-        href={`http://vk.com/share.php?title=${encodedTitle}&url=https%3A%2F%2Fdevnur.me%2Fposts%2F${id}`}
+        href={`http://vk.com/share.php?title=${encodedTitle}&url=https%3A%2F%2Fdvnr.me%2Fposts%2F${id}`}
         target="_blank"
         rel="noreferrer noopener"
         aria-label=""

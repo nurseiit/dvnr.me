@@ -47,12 +47,12 @@ const PostInit = ({
         openGraph={{
           title: post.title,
           description: post.description,
-          url: `https://devnur.me/posts/${post.id}`,
+          url: `https://dvnr.me/posts/${post.id}`,
           type: 'blog',
           locale: 'en_UK',
           images: [
             {
-              url: `https://devnur.me${imagePath}`,
+              url: `https://dvnr.me${imagePath}`,
             },
           ],
         }}

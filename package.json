@@ -1,9 +1,9 @@
 {
-  "name": "devnur.me",
+  "name": "dvnr.me",
   "version": "1.0.7",
   "description": "🚁 /dev/nur – a minimalist blog built with Next.js.",
   "main": "src/pages/index.tsx",
-  "repository": "git@github.com:nurseiit/devnur.me.git",
+  "repository": "git@github.com:nurseiit/dvnr.me.git",
   "author": "Nurseiit Abdimomyn <nurs@unist.ac.kr>",
   "license": "MIT",
   "private": true,
@@ -92,12 +92,10 @@
   },
   "lint-staged": {
     "*.{ts,tsx,js,jsx,css,json,md}": [
-      "prettier --write",
-      "git add"
+      "prettier --write"
     ],
     "*.{ts,tsx,js,jsx}": [
-      "eslint --fix",
-      "git add"
+      "eslint --fix"
     ]
   }
 }
