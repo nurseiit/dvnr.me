@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { FC, useState } from 'react';
 import styled from 'styled-components';
 import useDarkMode from 'use-dark-mode';
 import { Copy } from '@styled-icons/feather';
@@ -6,11 +6,6 @@ import { Copy } from '@styled-icons/feather';
 import Highlight, { defaultProps, Language } from 'prism-react-renderer';
 import nightOwl from 'prism-react-renderer/themes/nightOwl';
 import nightOwlLight from 'prism-react-renderer/themes/nightOwlLight';
-
-interface Props {
-  children: string;
-  className: string;
-}
 
 const Pre = styled.pre`
   font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
@@ -69,7 +64,15 @@ const CodeWrapper = styled.div`
   }
 `;
 
-const CodeBlock = ({ children, className }: Props): JSX.Element => {
+interface CodeBlockProps {
+  children: string;
+  className: string;
+}
+
+const CodeBlock: FC<CodeBlockProps> = ({
+  children,
+  className,
+}): JSX.Element => {
   const language = className ? className.replace(/language-/, '') : '';
   const { value } = useDarkMode();
   const [copyTitle, setCopyTitle] = useState('Click to copy');

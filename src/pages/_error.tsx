@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { FC } from 'react';
 import { NextPage } from 'next';
 import styled from 'styled-components';
 
@@ -19,7 +19,7 @@ const BigText = styled.h2`
   font-size: 2em;
 `;
 
-const ErrorText = ({ statusCode }: ErrorProps): JSX.Element => (
+const ErrorText: FC<ErrorProps> = ({ statusCode }) => (
   <>
     <Centered>
       <BigText>{statusCode}</BigText>
@@ -31,7 +31,7 @@ const ErrorText = ({ statusCode }: ErrorProps): JSX.Element => (
   </>
 );
 
-const Error: NextPage<ErrorProps> = ({ statusCode }: ErrorProps) => (
+const Error: NextPage<ErrorProps> = ({ statusCode }) => (
   <>
     <Centered>
       <Image src="/img/bear_error.png" />

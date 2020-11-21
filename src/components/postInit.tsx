@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { FC } from 'react';
 import Head from 'next/head';
 import { format } from 'date-fns';
 import { NextSeo } from 'next-seo';
@@ -6,15 +6,15 @@ import { NextSeo } from 'next-seo';
 import { findPost } from '../utils/posts';
 import { rhythm } from '../utils/typography';
 
-interface Props {
+interface PostInitProps {
   id: string;
   imagePath: string;
 }
 
-const PostInit = ({
+const PostInit: FC<PostInitProps> = ({
   id,
   imagePath = '/img/quitFacebookEcosystem-banner.jpg',
-}: Props): JSX.Element => {
+}) => {
   const post = findPost(id);
   return (
     <>

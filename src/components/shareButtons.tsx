@@ -1,11 +1,11 @@
-import React from 'react';
+import React, { FC } from 'react';
 import { findPost } from '../utils/posts';
 
-interface Props {
+interface ShareButtonsProps {
   id: string;
 }
 
-const ShareButtons = ({ id }: Props): JSX.Element => {
+const ShareButtons: FC<ShareButtonsProps> = ({ id }) => {
   // should handle # cases separately for twitter to work
   const encodedTitle = encodeURI(findPost(id).title).replace(/#/g, '%23');
   return (

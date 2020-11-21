@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { FC } from 'react';
 import styled from 'styled-components';
 import waveAnimation from './animations/waveAnimation';
 
@@ -10,7 +10,7 @@ const WavingEmoji = styled.span`
   display: inline-block;
 `;
 
-const WavingHand = (): JSX.Element => (
+const WavingHand: FC = () => (
   <WavingEmoji>
     <span aria-label="waving hand" role="img" style={{ fontSize: '2.3em' }}>
       👋

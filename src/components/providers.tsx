@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, FC } from 'react';
 import { ThemeProvider } from 'styled-components';
 import useDarkMode from 'use-dark-mode';
 import { MDXProvider } from '@mdx-js/react';
@@ -7,7 +7,7 @@ import components from './mdx';
 
 import { lightTheme, darkTheme } from '../utils/theme';
 
-const Providers: React.FC = ({ children }) => {
+const Providers: FC = ({ children }) => {
   const { value } = useDarkMode();
   const theme = value ? darkTheme : lightTheme;
 
