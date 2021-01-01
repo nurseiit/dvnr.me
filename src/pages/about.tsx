@@ -53,7 +53,7 @@ const AboutPage: NextPage = () => {
       </Centered>
       <Centered>
         <BodyPart>
-          Software Engineering Enthusiast{' '}
+          Frontend Engineer @ <a href="https://veon.com">VEON</a>{' '}
           <span
             style={{ fontSize: '1.3em' }}
             aria-label="Kazakhstan flag"
@@ -62,24 +62,15 @@ const AboutPage: NextPage = () => {
             🇰🇿
           </span>
         </BodyPart>
+
         <BodyPart>
-          Junior CS student, <a href="https://unist.ac.kr">UNIST</a>{' '}
+          Senior CS student, B.S. @ <a href="https://unist.ac.kr">UNIST</a>{' '}
           <span
             style={{ fontSize: '1.3em' }}
             aria-label="South Korea flag"
             role="img"
           >
             🇰🇷
-          </span>
-        </BodyPart>
-        <BodyPart>
-          Freelance full-stack and mobile developer{' '}
-          <span
-            style={{ fontSize: '1.3em' }}
-            aria-label="World emoji"
-            role="img"
-          >
-            🌏
           </span>
         </BodyPart>
       </Centered>
@@ -99,9 +90,28 @@ const AboutPage: NextPage = () => {
             margin: 'auto',
           }}
         />
-
         <BodyPart>
-          SWE Intern at <a href="https://hanbitco.com">Hanbitco</a>{' '}
+          Frontend Engineer @ <a href="https://viled.kz">Viled.kz</a>{' '}
+          <span
+            style={{ fontSize: '1.3em' }}
+            aria-label="Kazakhstan flag"
+            role="img"
+          >
+            🇰🇿
+          </span>
+        </BodyPart>
+        <BodyPart>
+          Freelance Full-Stack Engineer{' '}
+          <span
+            style={{ fontSize: '1.3em' }}
+            aria-label="World emoji"
+            role="img"
+          >
+            🌏
+          </span>
+        </BodyPart>
+        <BodyPart>
+          SWE, Intern @ <a href="https://hanbitco.com">Hanbitco</a>{' '}
           <span
             style={{ fontSize: '1.3em' }}
             aria-label="South Korea flag"
@@ -111,7 +121,7 @@ const AboutPage: NextPage = () => {
           </span>
         </BodyPart>
         <BodyPart>
-          Co-Founder and SWE at <a href="https://resta.io">RESTA</a>{' '}
+          Co-Founder and SWE @ <a href="https://resta.io">RESTA</a>{' '}
           <span
             style={{ fontSize: '1.3em' }}
             aria-label="HongKong and South Korea flags"
@@ -121,7 +131,7 @@ const AboutPage: NextPage = () => {
           </span>
         </BodyPart>
         <BodyPart>
-          Full-stack developer intern at{' '}
+          Full-Stack Engineer, Intern @{' '}
           <a href="https://avsoft.kz">AV Software</a>{' '}
           <span
             style={{ fontSize: '1.3em' }}
@@ -131,14 +141,31 @@ const AboutPage: NextPage = () => {
             🇰🇿
           </span>
         </BodyPart>
+      </Centered>
+      <br />
+      <Centered>
+        <BodyTitle>
+          <span aria-label="open book emoji" role="img">
+            📖
+          </span>{' '}
+          Education
+        </BodyTitle>{' '}
+        <hr
+          style={{
+            borderTop: '0.1px solid grey',
+            maxWidth: '300px',
+            opacity: 0.3,
+            margin: 'auto',
+          }}
+        />{' '}
         <BodyPart>
           Kazakh-Turkish Lyceum alumnus of 2017{' '}
           <span
             style={{ fontSize: '1.3em' }}
-            aria-label="Turkey flag"
+            aria-label="Kazakhstan and Turkey flag"
             role="img"
           >
-            🇹🇷
+            🇰🇿🇹🇷
           </span>
         </BodyPart>
       </Centered>
