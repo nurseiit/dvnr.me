@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { FC } from 'react';
 import useDarkMode from 'use-dark-mode';
 import styled from 'styled-components';
 import { Sun, Moon } from '@styled-icons/feather';
@@ -24,7 +24,7 @@ const Heading = styled.a`
   color: ${({ theme }): string => theme.heading};
 `;
 
-const Header = (): JSX.Element => {
+const Header: FC = () => {
   const darkMode = useDarkMode();
   const [colorMode, toggleColorMode] = [darkMode.value, darkMode.toggle];
   return (
@@ -58,7 +58,7 @@ const Header = (): JSX.Element => {
   );
 };
 
-const Footer = (): JSX.Element => (
+const Footer: FC = () => (
   <Flex>
     <div>
       <a href="/rss">rss</a> &bull; <a href="mailto:nurs@unist.ac.kr">mail</a>{' '}
@@ -71,11 +71,7 @@ const Footer = (): JSX.Element => (
   </Flex>
 );
 
-interface Props {
-  children: JSX.Element | string | null;
-}
-
-const Layout = ({ children }: Props): JSX.Element => (
+const Layout: FC = ({ children }) => (
   <div style={{ margin: 'auto', maxWidth: '730px' }}>
     <div style={{ margin: 'auto 20px' }}>
       <Header />
