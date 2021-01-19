@@ -53,13 +53,13 @@ const AboutPage: NextPage = () => {
       </Centered>
       <Centered>
         <BodyPart>
-          Frontend Engineer @ <a href="https://veon.com">VEON</a>{' '}
+          Frontend Engineer @ <a href="https://appboxo.com">Appboxo</a>{' '}
           <span
             style={{ fontSize: '1.3em' }}
-            aria-label="Kazakhstan flag"
+            aria-label="Singapore flag"
             role="img"
           >
-            🇰🇿
+            🇸🇬
           </span>
         </BodyPart>
 
@@ -90,6 +90,16 @@ const AboutPage: NextPage = () => {
             margin: 'auto',
           }}
         />
+        <BodyPart>
+          Frontend Engineer @ <a href="https://veon.com">VEON</a>{' '}
+          <span
+            style={{ fontSize: '1.3em' }}
+            aria-label="Kazakhstan flag"
+            role="img"
+          >
+            🇰🇿
+          </span>
+        </BodyPart>
         <BodyPart>
           Frontend Engineer @ <a href="https://viled.kz">Viled.kz</a>{' '}
           <span
