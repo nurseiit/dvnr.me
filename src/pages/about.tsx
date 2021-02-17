@@ -33,6 +33,7 @@ const Image = styled.img`
   &:hover {
     animation: ${rainbowAnimation} 1.5s infinite;
   }
+  width: 50%;
 `;
 
 const AboutPage: NextPage = () => {
@@ -42,7 +43,6 @@ const AboutPage: NextPage = () => {
         <Image
           alt="Me with a mythical creature statue in Macao."
           src="/img/avatar.jpg"
-          width="50%"
         />
       </Centered>
       <Centered>
