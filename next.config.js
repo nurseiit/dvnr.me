@@ -1,6 +1,9 @@
 const remarkMath = require('remark-math');
 const rehypeKatex = require('rehype-katex');
 
+const withPlugins = require('next-compose-plugins');
+const withPreact = require('next-plugin-preact');
+
 const withMDX = require('@next/mdx')({
   extension: /.mdx?$/,
   options: {
@@ -9,15 +12,20 @@ const withMDX = require('@next/mdx')({
   },
 });
 
-module.exports = withMDX({
-  pageExtensions: ['ts', 'tsx', 'mdx'],
-  async redirects() {
-    return [
-      {
-        source: '/posts',
-        destination: '/',
-        permanent: true,
-      },
-    ];
+module.exports = withPlugins([
+  withPreact,
+  withMDX,
+  {
+    pageExtensions: ['ts', 'tsx', 'mdx'],
+    async redirects() {
+      return [
+        {
+          source: '/posts',
+          destination: '/',
+          permanent: true,
+        },
+      ];
+    },
+    future: { webpack5: true },
   },
-});
+]);
